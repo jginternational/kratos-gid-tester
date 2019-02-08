@@ -1,0 +1,14 @@
+*~
+**/CVS/
+**/cvs/
+**/logfiles/*
+**/*zip
+.cvsignore
+.vs
+models/
+!example_projects/cmas2d.tester/models
+output/
+scripts/
+timeAdvance.txt
+tester_report.html
+models

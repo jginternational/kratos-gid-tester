@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cases version="1.0">
+  <case id="C8A668A9E6DF858B64C488CF3833ABDF" branch_require="developer">
+    <batch>batchs/Fluid/CylinderInFlow/2D/autotest_fluid2d_cylinderinflow_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_fluid2d_cylinderinflow_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Fluid 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_write.gid/autotest_fluid2d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
+    </check>
+  </case>
+  <case id="CB20E1D34EB1EFE9A7B4554287559474" branch_require="developer">
+    <batch>batchs/Fluid/CylinderInFlow/3D/autotest_fluid3d_cylinderinflow_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_fluid3d_cylinderinflow_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Fluid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_fluid3d_cylinderinflow_write.gid/autotest_fluid3d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
+    </check>
+  </case>
+  <case id="6C34B59C82D7E05C69BD6CCC8BC95475" branch_require="developer">
+    <batch>batchs/Fluid/CylinderInFlow/2D/autotest_fluid2d_cylinderinflow_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_fluid2d_cylinderinflow_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Fluid 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case id="74997E7ADB2F4714F9640709D52E0E99" branch_require="developer">
+    <batch>batchs/Solid/DynamicRod/2D/autotest_solid2d_dynamicrod_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_solid2d_dynamicrod_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Solid 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_write.gid/autotest_solid2d_dynamicrod_write.mdpa"]&gt;50000</check-1>
+    </check>
+  </case>
+  <case id="10BA3F020AF3F25B29787AC89F4256F1" branch_require="developer">
+    <batch>batchs/Solid/DynamicRod/2D/autotest_solid2d_dynamicrod_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_solid2d_dynamicrod_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Solid 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_calculate.gid/autotest_solid2d_dynamicrod_calculate.mdpa"]&gt;50000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_calculate.gid/autotest_solid2d_dynamicrod_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_calculate.gid/autotest_solid2d_dynamicrod_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case id="8D821937B8A27332846E93950F8ACAF0" branch_require="developer">
+    <batch>batchs/Solid/DynamicRod/3D/autotest_solid3d_dynamicrod_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_solid3d_dynamicrod_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Solid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid/autotest_solid3d_dynamicrod_calculate.mdpa"]&gt;50000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid/autotest_solid3d_dynamicrod_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid/autotest_solid3d_dynamicrod_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case id="E2361CC7BC0ED6C6F4FA08D434210100" branch_require="developer">
+    <batch>batchs/Solid/DynamicRod/3D/autotest_solid3d_dynamicrod_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_solid3d_dynamicrod_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Solid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_write.gid/autotest_solid3d_dynamicrod_write.mdpa"]&gt;50000</check-1>
+    </check>
+  </case>
+  <case id="CA07A7AF3F8DE42120ED2BBFBF438E1A" branch_require="developer">
+    <batch>batchs/FSI/Mok/2D/autotest_fsi2d_mok_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_fsi2d_mok_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>FSI 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate_Fluid.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate_Structural.mdpa"]&gt;50000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case id="F9C141C7D7D23D24D4AD8F55F99E78D4" branch_require="developer">
+    <batch>batchs/FSI/Mok/2D/autotest_fsi2d_mok_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_fsi2d_mok_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>FSI 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_write.gid/autotest_fsi2d_mok_write_Fluid.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_write.gid/autotest_fsi2d_mok_write_Structural.mdpa"]&gt;50000</check-2>
+    </check>
+  </case>
+</cases>
+
