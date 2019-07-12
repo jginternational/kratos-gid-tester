@@ -133,5 +133,27 @@
       <check-4>[file size "[tester::get_tmp_folder]/autotest_solid3d_circulartank_calculate.gid/autotest_solid3d_circulartank_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
+  <case branch_require="developer" id="AA54FA3C43DC47CB949236E17D82410C">
+    <batch>batchs/Structural/HighRiseBuilding/2D/autotest_structural2d_highrisebuilding_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_structural2d_highrisebuilding_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Structural 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_calculate.gid/autotest_structural2d_highrisebuilding_calculate.mdpa"]&gt;40000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_calculate.gid/autotest_structural2d_highrisebuilding_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_calculate.gid/autotest_structural2d_highrisebuilding_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="AD64DCDC12AC2A43EDA1392869EDE3DE">
+    <batch>batchs/Structural/HighRiseBuilding/2D/autotest_structural2d_highrisebuilding_write.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_structural2d_highrisebuilding_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Structural 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_write.gid/autotest_structural2d_highrisebuilding_write.mdpa"]&gt;200000</check-1>
+    </check>
+  </case>
 </cases>
 
