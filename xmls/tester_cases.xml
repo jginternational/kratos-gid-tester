@@ -162,9 +162,10 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>DEM 3D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_FEM_boundary.mdpa"]&gt;500000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM.mdpa"]&gt;100000</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM.mdpa"]&gt;100000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_FEM_boundary.mdpa"]&gt;500000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/ProjectParametersDEM.json"]&gt;1024</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-4>
     </check>
   </case>
 </cases>
