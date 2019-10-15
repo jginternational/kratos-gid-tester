@@ -155,5 +155,17 @@
       <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_write.gid/autotest_structural2d_highrisebuilding_write.mdpa"]&gt;40000</check-1>
     </check>
   </case>
+  <case branch_require="developer" id="7A902794B5BB91218885533982D5EDA8">
+    <batch>batchs/DEM/SphereDrop/3D/autotest_dem3d_spheredrop_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_dem3d_spheredrop_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>DEM 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_FEM_boundary.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM.mdpa"]&gt;100000</check-3>
+    </check>
+  </case>
 </cases>
 
