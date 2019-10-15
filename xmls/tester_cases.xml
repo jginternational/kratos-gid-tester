@@ -152,7 +152,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Structural 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_write.gid/autotest_structural2d_highrisebuilding_write.mdpa"]&gt;200000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_write.gid/autotest_structural2d_highrisebuilding_write.mdpa"]&gt;40000</check-1>
     </check>
   </case>
 </cases>
