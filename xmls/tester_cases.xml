@@ -107,7 +107,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConvectionDiffusion 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/autotest_convectiondiffusion2d_heatedsquare_write.mdpa"]&gt;20000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/autotest_convectiondiffusion2d_heatedsquare_write.mdpa"]&gt;50000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-2>
     </check>
   </case>
@@ -166,6 +166,18 @@
       <check-2>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_FEM_boundary.mdpa"]&gt;500000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/ProjectParametersDEM.json"]&gt;1024</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="9BAEB419F8B9F3D9BBD356C4B9173B20">
+    <batch>batchs/ConvectionDiffusion/2D/autotest_convectiondiffusion2d_heatedsquare_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_convectiondiffusion2d_heatedsquare_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConvectionDiffusion 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.mdpa"]&gt;50000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
 </cases>
