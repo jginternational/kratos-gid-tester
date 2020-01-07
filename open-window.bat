@@ -1,0 +1,1 @@
+%~dp0tester-windows-64.exe -project "%~dp0project/kratos x64.tester" 
