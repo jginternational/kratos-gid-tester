@@ -2,11 +2,11 @@
 <tester_configuration version='1.0'>
 <variables_tester>
   <analize_cause_fail>0</analize_cause_fail>
-  <basecasesdir></basecasesdir>
+  <basecasesdir>E:/PROYECTOS/KratosTester</basecasesdir>
   <branch_provide>developer</branch_provide>
   <email_on_fail>0</email_on_fail>
   <enable_filters>1</enable_filters>
-  <exe></exe>
+  <exe>E:/GiD/GiD 14.1.7d/gid.exe</exe>
   <filter_branch_provide>1</filter_branch_provide>
   <filter_date>0</filter_date>
   <filter_fail>0</filter_fail>
@@ -18,12 +18,12 @@
   <filter_memory>0</filter_memory>
   <filter_memory_value>500</filter_memory_value>
   <filter_platform_provide>1</filter_platform_provide>
-  <filter_tags>0</filter_tags>
-  <filter_tags_value></filter_tags_value>
+  <filter_tags>1</filter_tags>
+  <filter_tags_value>{2D 0} {3D 0} {ConvectionDiffusion 0} {DEM 0} {Fluid 0} {FSI 0} {Solid 1} {Structural 0}</filter_tags_value>
   <filter_time>0</filter_time>
   <filter_time_value>2</filter_time_value>
   <gidini>scripts/gidDefaults</gidini>
-  <gidshowtclerror>1</gidshowtclerror>
+  <gidshowtclerror>0</gidshowtclerror>
   <graphs_date_max>0</graphs_date_max>
   <graphs_date_max_value></graphs_date_max_value>
   <graphs_date_min>0</graphs_date_min>
@@ -33,7 +33,7 @@
   <lastfilenames></lastfilenames>
   <maxmemory>0</maxmemory>
   <maxprocess>8</maxprocess>
-  <offscreen_exe></offscreen_exe>
+  <offscreen_exe>E:/GiD/GiD 14.1.7d/gid_offscreen.bat</offscreen_exe>
   <opposite_filters>0</opposite_filters>
   <owner></owner>
   <owners>fjgarate@cimne.upc.edu</owners>
