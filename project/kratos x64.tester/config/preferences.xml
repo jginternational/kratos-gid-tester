@@ -31,6 +31,10 @@
   <htmlimagesbyrow>3</htmlimagesbyrow>
   <initialdir>/xmls</initialdir>
   <lastfilenames></lastfilenames>
+  <mailsend_password>b34wB0fOjWI=</mailsend_password>
+  <mailsend_port>465</mailsend_port>
+  <mailsend_server>smtp.gmail.com</mailsend_server>
+  <mailsend_username>b34wB0fOjWI=</mailsend_username>
   <maxmemory>0</maxmemory>
   <maxprocess>8</maxprocess>
   <offscreen_exe>E:/GiD/GiD 14.1.7d/gid_offscreen.bat</offscreen_exe>
@@ -48,4 +52,11 @@
   <test_gid>1</test_gid>
   <timeout>3600</timeout>
 </variables_tester>
+<variables_visual_studio>
+  <vs_path>C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise</vs_path>
+  <vs_solution>C:/gid project/gidvs/gid.sln</vs_solution>
+</variables_visual_studio>
+<variables_git>
+  <project_dir>C:/gid project</project_dir>
+</variables_git>
 </tester_configuration>

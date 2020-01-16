@@ -17,3 +17,4 @@ project/kratos x64.tester/config/
 !project/kratos x64.tester/config/tree_open.txt
 !scripts
 scripts/.GiDPostPreferences.ini
+package-lock.json

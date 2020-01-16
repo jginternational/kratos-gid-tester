@@ -7,10 +7,13 @@ var logdir = path.join(abs_path, "project", "kratos x64.tester", "logfiles");
 
 function runAllCases() {
 
+    ls();
+
     // Clean previous output
     cleanPreviousLogs()
 
-    var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
+    //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
+    var exepath = path.join(abs_path, "scripts", "tester-linux-64");
     var params = path.join(abs_path, "project", "kratos x64.tester");
     var command = exepath + ' -project \"' + params + '\"';
     command += ' -gui 0 -eval "tester::run_all; tester::exit"';
@@ -20,6 +23,7 @@ function runAllCases() {
         if (err) {
             // node couldn't execute the command
             console.log(`ERROR`);
+            console.log(stderr);
             return;
         }
 
@@ -53,6 +57,18 @@ function serializeLogs() {
         }
     });
     return cases;
+}
+
+function ls() {
+
+    var exepath = path.join(abs_path, "scripts");
+    require('fs').readdir(exepath, function (err, items) {
+        console.log(items);
+
+        for (var i = 0; i < items.length; i++) {
+            console.log(items[i]);
+        }
+    });
 }
 
 //console.log(serializeLogs());
