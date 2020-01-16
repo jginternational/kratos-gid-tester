@@ -1,0 +1,23 @@
+{
+  "name": "kratostester",
+  "version": "1.0.0",
+  "description": "GiD Tester project for Kratos Problemtype",
+  "main": "scripts/noderun.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node scripts/noderun.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jginternational/kratos-gid-tester.git"
+  },
+  "author": "fjgarate@cimne.upc.edu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jginternational/kratos-gid-tester/issues"
+  },
+  "homepage": "https://github.com/jginternational/kratos-gid-tester#readme",
+  "dependencies": {
+    "fs-extra": "^8.1.0"
+  }
+}

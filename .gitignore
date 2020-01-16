@@ -5,6 +5,7 @@
 **/*zip
 .cvsignore
 .vs
+node_modules/
 models/
 !example_projects/cmas2d.tester/models
 output/
