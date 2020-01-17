@@ -15,6 +15,8 @@ function runAllCases() {
     var params = path.join(abs_path, "project", "kratos x64.tester");
     var command = exepath + ' -project \"' + params + '\"';
     command += ' -gui 0 -eval "tester::run_all; tester::exit"';
+
+    command = 'tclsh /gid/gid-x64/tester.tcl -project "/app/project/kratos x64.tester" -gui 0 -eval "tester::run_all; tester::exit"';
     console.log(command);
     const { exec } = require('child_process');
     exec(command, (err, stdout, stderr) => {

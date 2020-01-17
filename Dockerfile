@@ -1,14 +1,19 @@
-# specify the node base image with your desired version node:<version>
-FROM node:alpine
+
+FROM fjgarate/gid-kratos-static-test
+
 
 WORKDIR /app
-COPY . .
+
+COPY "scripts/noderundocker.js" "scripts/noderundocker.js"
+COPY "scripts/tester-linux-64" "scripts/tester-linux-64"
+RUN chmod 750 "scripts/tester-linux-64"
+COPY batchs batchs
+COPY xmls xmls
+COPY package.json package.json
+COPY project project
 RUN rm "project/kratos x64.tester/config/preferences.xml"
 RUN mv "project/kratos x64.tester/config/preferencesdocker.xml" "project/kratos x64.tester/config/preferences.xml"
+
 RUN npm install
-RUN apk update && apk add tcl
-RUN apk add --no-cache git
-RUN "scripts/install-gid.sh"
-RUN "scripts/install-kratos.sh"
-RUN ls scripts
+COPY "scripts/tester.tcl" "/gid/gid-x64/tester.tcl"
 CMD node "scripts/noderundocker.js"
