@@ -18,3 +18,4 @@ project/kratos x64.tester/config/
 !scripts
 scripts/.GiDPostPreferences.ini
 package-lock.json
+scripts/tester-linux-64
