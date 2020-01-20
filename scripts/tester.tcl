@@ -8,7 +8,6 @@ if { [info procs ::_] == ""  && [info commands ::_] == "" } {
     interp alias {} _ {} ::msgcat::mc
 }
 
-
 proc ::bgerror { errstring } {
     tester::message $::errorInfo
 }
@@ -2308,7 +2307,6 @@ proc tester::execute_test { case_id force_with_window { run_option ""}} {
         }
         set cmd "$cmd > $stdout_filename"
     }
-    puts "cmd -> $cmd"
 
     #tester::trace_preferences_path ;#to force to set env(PATH)
     set t0 [clock seconds]
@@ -2352,9 +2350,6 @@ proc tester::after_execute_test { pid status case_id } {
                 variable stdoutput_$case_id
                 set outfile [set stdoutput_$case_id]
             }
-            if {![info exists ::wait_time]} {set ::wait_time 1000}
-            after $::wait_time
-            puts "$::wait_time $outfile [file exists $outfile]"
             if { [file exists $outfile] } {
                 tester::set_variable $case_id results [concat [tester::get_variable $case_id results] [{*}[tester::get_variable $case_id readingproc] $outfile]]                 
             } else {
@@ -6735,7 +6730,7 @@ proc tester::trace_preferences_path { args } {
         #set ::env(PATH) $full_path
         set len_path [string length $full_path]        
         if { [string range $::env(PATH) end-[expr $len_path-1] end] != $full_path } {
-            set ::env(PATH) "$::env(PATH);$full_path"
+            set ::env(PATH) "$::env(PATH):$full_path"
         }
     }
 }
