@@ -1,9 +1,8 @@
-
-var abs_path = process.cwd();
+const abs_path = process.cwd();
 const path = require('path');
+const project_dir = path.join(abs_path, "project", "kratos x64.tester");
 const fsExtra = require('fs-extra');
-var logdir = path.join(abs_path, "project", "kratos x64.tester", "logfiles");
-
+const logdir = path.join(abs_path, "project", "kratos x64.tester", "logfiles");
 
 function runAllCases() {
 
@@ -13,12 +12,9 @@ function runAllCases() {
     //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
     var exe_name  = process.platform === "win32" ? "tester-windows-64.exe" : "tester-linux-64";
     var exepath = path.join(abs_path, "scripts", exe_name);
-    if (process.platform === "win32")
-    var params = path.join(abs_path, "project", "kratos x64.tester");
-    var command = exepath + ' -project \"' + params + '\"';
+    var command = exepath + ' -project \"' + project_dir + '\"';
     command += ' -gui 0 -eval "tester::run_all; tester::exit"';
 
-    //command = 'tclsh /gid/gid-x64/tester.tcl -project "/app/project/kratos x64.tester" -gui 0 -eval "tester::run_all; tester::exit"';
     console.log(command);
     const { exec } = require('child_process');
     exec(command, (err, stdout, stderr) => {
@@ -40,6 +36,7 @@ function cleanPreviousLogs() {
     console.log(`Clear logs at ` + logdir);
     fsExtra.emptyDirSync(logdir);
 }
+
 function serializeLogs() {
     var logfile = path.join(logdir, "tester.log");
 
