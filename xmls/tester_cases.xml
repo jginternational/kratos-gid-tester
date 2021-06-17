@@ -32,50 +32,6 @@
       <check-3>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case id="897232F5EF62F69D0ADBBC917BAB97BF" branch_require="developer">
-    <batch>batchs/Solid/DynamicRod/2D/autotest_solid2d_dynamicrod_write.bch</batch>
-    <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_solid2d_dynamicrod_write</name>
-    <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Solid 2D</tags>
-    <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_write.gid/autotest_solid2d_dynamicrod_write.mdpa"]&gt;50000</check-1>
-    </check>
-  </case>
-  <case id="EBB303AE2917FDFFF183E54843774CFD" branch_require="developer">
-    <batch>batchs/Solid/DynamicRod/2D/autotest_solid2d_dynamicrod_calculate.bch</batch>
-    <help>calculate test using developer kratos version</help>
-    <name>autotest_solid2d_dynamicrod_calculate</name>
-    <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Solid 2D</tags>
-    <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_calculate.gid/autotest_solid2d_dynamicrod_calculate.mdpa"]&gt;50000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_calculate.gid/autotest_solid2d_dynamicrod_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_solid2d_dynamicrod_calculate.gid/autotest_solid2d_dynamicrod_calculate.post.lst"]&gt;0</check-3>
-    </check>
-  </case>
-  <case id="F1A1C196CBD4F7308731AC75D35B73BC" branch_require="developer">
-    <batch>batchs/Solid/DynamicRod/3D/autotest_solid3d_dynamicrod_calculate.bch</batch>
-    <help>calculate test using developer kratos version</help>
-    <name>autotest_solid3d_dynamicrod_calculate</name>
-    <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Solid 3D</tags>
-    <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid/autotest_solid3d_dynamicrod_calculate.mdpa"]&gt;50000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid/autotest_solid3d_dynamicrod_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid/autotest_solid3d_dynamicrod_calculate.post.lst"]&gt;0</check-3>
-    </check>
-  </case>
-  <case id="7107DDD20B15C9D4F8EE355D1EDC2B82" branch_require="developer">
-    <batch>batchs/Solid/DynamicRod/3D/autotest_solid3d_dynamicrod_write.bch</batch>
-    <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_solid3d_dynamicrod_write</name>
-    <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Solid 3D</tags>
-    <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_write.gid/autotest_solid3d_dynamicrod_write.mdpa"]&gt;50000</check-1>
-    </check>
-  </case>
   <case id="E5DC76514A7F6CDC35D766392181C08B" branch_require="developer">
     <batch>batchs/FSI/Mok/2D/autotest_fsi2d_mok_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
@@ -109,28 +65,6 @@
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/autotest_convectiondiffusion2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-2>
-    </check>
-  </case>
-  <case branch_require="developer" id="F8BE45D617928A5E06FE97BF61497283">
-    <batch>batchs/Solid/CircularTank/3D/autotest_solid3d_circulartank_write.bch</batch>
-    <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_solid3d_circulartank_write</name>
-    <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Solid 3D</tags>
-    <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_solid3d_circulartank_write.gid/autotest_solid3d_circulartank_write.mdpa"]&gt;200000</check-1>
-    </check>
-  </case>
-  <case branch_require="developer" id="3C378BB074EA10E35DA78CCAB9FC9E15">
-    <batch>batchs/Solid/CircularTank/3D/autotest_solid3d_circulartank_calculate.bch</batch>
-    <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_solid3d_circulartank_calculate</name>
-    <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Solid 3D</tags>
-    <check>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_solid3d_circulartank_calculate.gid/autotest_solid3d_circulartank_calculate.mdpa"]&gt;20000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_solid3d_circulartank_calculate.gid/autotest_solid3d_circulartank_calculate.err"]&lt;1</check-3>
-      <check-4>[file size "[tester::get_tmp_folder]/autotest_solid3d_circulartank_calculate.gid/autotest_solid3d_circulartank_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
   <case branch_require="developer" id="AA54FA3C43DC47CB949236E17D82410C">
@@ -180,7 +114,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="0E7F132E5143EAE5873C74C745B56B02">
+  <case branch_require="developer" id="BA0EF35E9F4AE46042628060669AC63C">
     <batch>batchs/DEM/SphereDrop/2D/autotest_dem2d_circledrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>autotest_dem2d_circledrop_write</name>
