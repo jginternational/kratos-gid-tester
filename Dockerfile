@@ -14,9 +14,7 @@ RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get -y install nodejs
 
 COPY "scripts/runAllCases.js" "scripts/runAllCases.js"
-COPY "scripts/tester.zip" "scripts/tester.zip"
 ADD scripts/tester.tar .
-RUN rm scripts/tester.zip
 COPY batchs batchs
 COPY xmls xmls
 COPY package.json package.json
