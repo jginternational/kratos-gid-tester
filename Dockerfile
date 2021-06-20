@@ -10,10 +10,10 @@ RUN "scripts/install-kratos.sh"
 
 
 RUN apt-get -y install curl
-RUN curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get -y install nodejs
 
-COPY "scripts/noderundocker.js" "scripts/noderundocker.js"
+COPY "scripts/runAllCases.js" "scripts/runAllCases.js"
 COPY "scripts/tester-linux-64" "scripts/tester-linux-64"
 RUN chmod 750 "scripts/tester-linux-64"
 COPY batchs batchs
