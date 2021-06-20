@@ -14,8 +14,9 @@ RUN curl -sL https://deb.nodesource.com/setup_13.x | bash -
 RUN apt-get -y install nodejs
 
 COPY "scripts/runAllCases.js" "scripts/runAllCases.js"
-COPY "scripts/tester-linux-64" "scripts/tester-linux-64"
-RUN chmod 750 "scripts/tester-linux-64"
+COPY "scripts/tester.zip" "scripts/tester.zip"
+ADD scripts/tester.tar .
+RUN rm scripts/tester.zip
 COPY batchs batchs
 COPY xmls xmls
 COPY package.json package.json
@@ -24,5 +25,4 @@ RUN mv "project/kratos x64.tester/config/preferencesdocker.xml" "project/kratos 
 
 RUN npm install
 
-#COPY "scripts/tester.tcl" "/gid/gid-x64/tester.tcl"
 CMD node "scripts/runAllCases.js"

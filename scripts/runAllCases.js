@@ -10,9 +10,19 @@ function runAllCases() {
     cleanPreviousLogs()
 
     //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
-    var exe_name  = process.platform === "win32" ? "tester-windows-64.exe" : "tester-linux-64";
-    var exepath = path.join(abs_path, "scripts", exe_name);
-    var command = exepath + ' -project \"' + project_dir + '\"';
+    // var exe_name  = process.platform === "win32" ? "tester-windows-64.exe" : "tester-linux-64";
+    // var exepath = path.join(abs_path, "scripts", exe_name);
+    // var command = exepath + ' -project \"' + project_dir + '\"';
+    // command += ' -gui 0 -eval "tester::run_all; tester::exit"';
+        //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
+    if (process.platform === "win32") {
+        var exe_name = "tester-windows-64.exe";
+        var exepath = path.join(abs_path, "scripts", exe_name);
+        var command = exepath + ' -project \"' + project_dir + '\"';
+    } else {
+        var exepath = path.join(abs_path, "tester", "tester");
+        var command = '/gid/gid -tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
+    }
     command += ' -gui 0 -eval "tester::run_all; tester::exit"';
 
     console.log(command);
