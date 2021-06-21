@@ -10,26 +10,18 @@ echo "Download GiDInterface master branch"
 cd /tmp
 git clone https://github.com/KratosMultiphysics/GiDInterface.git
 echo "Downloaded"
-cd ${CURR_DIR}
-mv -f /tmp/GiDInterface/kratos.gid ${CURR_DIR}
-rm -r /tmp/GiDInterface
+mv -f /tmp/GiDInterface/kratos.gid /gid/problemtypes
+# rm -r /tmp/GiDInterface
 
 echo "Download GiDInterface master branch"
 cd /tmp
-#TARFILENAME=kratos-7.1-linux-64.tgz
-#wget --quiet https://github.com/KratosMultiphysics/Kratos/releases/download/7.1/${TARFILENAME}
-#wget --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/images/${TARFILENAME}
-wget --quiet https://github.com/KratosMultiphysics/Kratos/releases/download/v8.1/kratos-8.1.0-linux-64.tgz
+wget --no-check-certificate --cipher 'DEFAULT:!DH' --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/kratos-latest-linux-64.tgz
 echo "Downloaded"
 
 echo "Uncompress"
-tar -xf ./kratos-8.1.0-linux-64.tgz
-#tar -xf ${TARFILENAME}
-#rm ${TARFILENAME}
+tar -xf ./kratos-latest-linux-64.tgz
 
-mkdir ${CURR_DIR}/${PROBLEMTYPE_DIR_NAME}/exec/Kratos
-mv /tmp/zip/dist/runkratos/* ${CURR_DIR}/${PROBLEMTYPE_DIR_NAME}/exec/Kratos
-rm -r /tmp/zip
-
-ln -s ${CURR_DIR}/${PROBLEMTYPE_DIR_NAME} /gid/problemtypes/kratos.gid
+mkdir /gid/problemtypes/kratos.gid/exec/Kratos
+mv /tmp/KratosRelease/* /gid/problemtypes/kratos.gid/exec/Kratos
+# rm -r /tmp/KratosRelease
 echo "KRATOS READY"

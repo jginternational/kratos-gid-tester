@@ -19,11 +19,13 @@ function runAllCases() {
         var exe_name = "tester-windows-64.exe";
         var exepath = path.join(abs_path, "scripts", exe_name);
         var command = exepath + ' -project \"' + project_dir + '\"';
+        var extra_flags = '';
     } else {
         var exepath = path.join(abs_path, "tester", "tester");
         var command = '/gid/tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
+        var extra_flags = ' -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml ';
     }
-    command += ' -gui 0  -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml -verbose 1 -eval "tester::run_all; tester::exit"';
+    command += extra_flags + ' -gui 0 -verbose 1 -eval "tester::run_all; tester::exit"';
 
     console.log(command);
     const { exec } = require('child_process');
