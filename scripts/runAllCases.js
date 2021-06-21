@@ -2,6 +2,7 @@ const abs_path = process.cwd();
 const path = require('path');
 const project_dir = path.join(abs_path, "project", "kratos x64.tester");
 const fsExtra = require('fs-extra');
+const { exit } = require('process');
 const logdir = path.join(abs_path, "project", "kratos x64.tester", "logfiles");
 
 function runAllCases() {
@@ -41,6 +42,7 @@ function runAllCases() {
         console.log(`FINISH TESTS`);
         var cases = serializeLogs();
         console.log(cases);
+        if (cases => cases.every(v => v.error !== 0)) exit(-1);
     });
 };
 
