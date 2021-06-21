@@ -6,12 +6,14 @@ PROBLEMTYPE_DIR_NAME=kratos.gid
 mkdir ${PROBLEMTYPE_DIR_NAME}
 rm -r /gid/problemtypes/kratos.gid
 
-# echo "Download GiDInterface master branch"
-# cd /tmp
-# git clone https://github.com/KratosMultiphysics/GiDInterface.git
-# echo "Downloaded"
-# mv -f /tmp/GiDInterface/kratos.gid /gid/problemtypes
-# rm -r /tmp/GiDInterface
+if [[ -z "${GITHUB_ACTION}" ]]; then
+    echo "Download GiDInterface master branch"
+    cd /tmp
+    git clone https://github.com/KratosMultiphysics/GiDInterface.git
+    echo "Downloaded"
+    mv -f /tmp/GiDInterface/kratos.gid /gid/problemtypes
+    rm -r /tmp/GiDInterface
+fi
 
 echo "Download GiDInterface master branch"
 cd /tmp
@@ -21,7 +23,9 @@ echo "Downloaded"
 echo "Uncompress"
 tar -xf ./kratos-latest-linux-64.tgz
 
-# mkdir /gid/problemtypes/kratos.gid/exec/Kratos
-# mv /tmp/KratosRelease/* /gid/problemtypes/kratos.gid/exec/Kratos
-# rm -r /tmp/KratosRelease
+if [[ -z "${GITHUB_ACTION}" ]]; then
+    mkdir /gid/problemtypes/kratos.gid/exec/Kratos
+    mv /tmp/KratosRelease/* /gid/problemtypes/kratos.gid/exec/Kratos
+    rm -r /tmp/KratosRelease
+fi 
 echo "KRATOS READY"
