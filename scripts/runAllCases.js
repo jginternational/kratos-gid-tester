@@ -32,7 +32,7 @@ function runAllCases() {
     exec(command, (err, stdout, stderr) => {
         if (err) {
             // node couldn't execute the command
-            console.log(`ERROR`);
+            console.log(`ERROR executing tests`);
             console.log(stderr);
             return;
         }
