@@ -6,7 +6,7 @@
   <branch_provide>official</branch_provide>
   <email_on_fail>0</email_on_fail>
   <enable_filters>1</enable_filters>
-  <exe>/gid/gid-x64/gid</exe>
+  <exe>/gid/gidx</exe>
   <filter_branch_provide>0</filter_branch_provide>
   <filter_date>0</filter_date>
   <filter_fail>0</filter_fail>

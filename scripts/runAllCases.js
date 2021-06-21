@@ -21,9 +21,9 @@ function runAllCases() {
         var command = exepath + ' -project \"' + project_dir + '\"';
     } else {
         var exepath = path.join(abs_path, "tester", "tester");
-        var command = '/gid/gid -tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
+        var command = '/gid/tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
     }
-    command += ' -gui 0 -eval "tester::run_all; tester::exit"';
+    command += ' -gui 0  -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml -verbose 1 -eval "tester::run_all; tester::exit"';
 
     console.log(command);
     const { exec } = require('child_process');

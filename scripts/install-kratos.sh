@@ -19,10 +19,11 @@ cd /tmp
 #TARFILENAME=kratos-7.1-linux-64.tgz
 #wget --quiet https://github.com/KratosMultiphysics/Kratos/releases/download/7.1/${TARFILENAME}
 #wget --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/images/${TARFILENAME}
+wget --quiet https://github.com/KratosMultiphysics/Kratos/releases/download/v8.1/kratos-8.1.0-linux-64.tgz
 echo "Downloaded"
 
 echo "Uncompress"
-tar -xf ./latest-linux-x64.tgz
+tar -xf ./kratos-8.1.0-linux-64.tgz
 #tar -xf ${TARFILENAME}
 #rm ${TARFILENAME}
 
