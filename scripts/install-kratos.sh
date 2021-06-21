@@ -15,7 +15,7 @@ if [[ -z "${GITHUB_ACTION}" ]]; then
     rm -r /tmp/GiDInterface
 fi
 
-echo "Download GiDInterface master branch"
+echo "Download kratos bins"
 cd /tmp
 wget --no-check-certificate --cipher 'DEFAULT:!DH' --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/kratos-latest-linux-64.tgz
 echo "Downloaded"
