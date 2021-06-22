@@ -1,4 +1,4 @@
-
+#!/bin/bash
 # Delete previous files
 echo "Hi"
 CURR_DIR=$PWD
@@ -6,7 +6,7 @@ PROBLEMTYPE_DIR_NAME=kratos.gid
 mkdir ${PROBLEMTYPE_DIR_NAME}
 rm -r /gid/problemtypes/kratos.gid
 
-if [[ -z "${GITHUB_ACTION}" ]]; then
+if [[ -v "${GITHUB_ACTION}" ]]; then
     echo "You are in Github Actions -> your code will arrive later"
 else
     echo "Download GiDInterface master branch"
@@ -25,11 +25,11 @@ echo "Downloaded"
 echo "Uncompress"
 tar -xf ./kratos-latest-linux-64.tar.gz
 
-if [[ -z "${GITHUB_ACTION}" ]]; then
+if [[ -v "${GITHUB_ACTION}" ]]; then
     echo "You are in Github Actions -> your exe will be placed later"
 else 
     mkdir /gid/problemtypes/kratos.gid/exec/Kratos
-    mv /tmp/Release/* /gid/problemtypes/kratos.gid/exec/Kratos
-    rm -r /tmp/Release
+    mv /tmp/bin/Release/* /gid/problemtypes/kratos.gid/exec/Kratos
+    rm -r /tmp/bin/Release
 fi 
 echo "KRATOS READY"
