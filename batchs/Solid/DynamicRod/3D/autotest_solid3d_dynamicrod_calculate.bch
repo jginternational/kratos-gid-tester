@@ -1,9 +1,0 @@
-*****tcl file delete -force "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate.gid"
-MEscape Data Defaults ProblemType kratos escape 
-*****tcl Kratos::Quicktest Solid 3D ::Solid::examples::DynamicRod
-*****tcl MeshGenerationOKDo DefaultSize
-MEscape Files SaveAs "[tester::get_tmp_folder]/autotest_solid3d_dynamicrod_calculate" escape
-MEscape Utilities Calculate escape escape escape
-Mescape Files Save
-*****tcl after 10000 {PWKillProc current yes}
-*****tcl WaitUntilAllProcessTerminate
