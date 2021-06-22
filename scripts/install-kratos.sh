@@ -7,12 +7,14 @@ mkdir ${PROBLEMTYPE_DIR_NAME}
 rm -r /gid/problemtypes/kratos.gid
 
 if [[ -z "${GITHUB_ACTION}" ]]; then
+    echo "You are in Github Actions -> your code will arrive later"
+else
     echo "Download GiDInterface master branch"
     cd /tmp
     git clone https://github.com/KratosMultiphysics/GiDInterface.git
-    echo "Downloaded"
     mv -f /tmp/GiDInterface/kratos.gid /gid/problemtypes
     rm -r /tmp/GiDInterface
+    echo "Downloaded"
 fi
 
 echo "Download kratos bins"
@@ -24,6 +26,8 @@ echo "Uncompress"
 tar -xf ./kratos-latest-linux-64.tgz
 
 if [[ -z "${GITHUB_ACTION}" ]]; then
+    echo "You are in Github Actions -> your exe will be placed later"
+else 
     mkdir /gid/problemtypes/kratos.gid/exec/Kratos
     mv /tmp/KratosRelease/* /gid/problemtypes/kratos.gid/exec/Kratos
     rm -r /tmp/KratosRelease
