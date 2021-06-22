@@ -19,17 +19,17 @@ fi
 
 echo "Download kratos bins"
 cd /tmp
-wget --no-check-certificate --cipher 'DEFAULT:!DH' --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/kratos-latest-linux-64.tgz
+wget --no-check-certificate --cipher 'DEFAULT:!DH' --quiet https://web.cimne.upc.edu/users/fjgarate/descargas/kratos-latest-linux-64.tar.gz
 echo "Downloaded"
 
 echo "Uncompress"
-tar -xf ./kratos-latest-linux-64.tgz
+tar -xf ./kratos-latest-linux-64.tar.gz
 
 if [[ -z "${GITHUB_ACTION}" ]]; then
     echo "You are in Github Actions -> your exe will be placed later"
 else 
     mkdir /gid/problemtypes/kratos.gid/exec/Kratos
-    mv /tmp/KratosRelease/* /gid/problemtypes/kratos.gid/exec/Kratos
-    rm -r /tmp/KratosRelease
+    mv /tmp/Release/* /gid/problemtypes/kratos.gid/exec/Kratos
+    rm -r /tmp/Release
 fi 
 echo "KRATOS READY"
