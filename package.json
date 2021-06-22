@@ -1,6 +1,6 @@
 {
     "name": "kratostester",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "GiD Tester project for Kratos Problemtype",
     "main": "scripts/runAllCases.js",
     "scripts": {
