@@ -126,5 +126,16 @@
       <check-3>[file size "[tester::get_tmp_folder]/autotest_dem2d_circledrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-3>
     </check>
   </case>
+  <case branch_require="developer" id="4AB5C1FA6C5EF28FFCD1608504044C58">
+    <batch>batchs/FSI/Mok/2D/autotest_fsi2d_turek_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_fsi2d_turek_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>FSI 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_fsi2d_turek_write.gid/autotest_fsi2d_turek_write_Fluid.mdpa"]&gt;2000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_fsi2d_turek_write.gid/autotest_fsi2d_turek_write_Structural.mdpa"]&gt;300000</check-2>
+    </check>
+  </case>
 </cases>
 
