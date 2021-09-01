@@ -6,7 +6,7 @@
   <branch_provide>official</branch_provide>
   <email_on_fail>0</email_on_fail>
   <enable_filters>1</enable_filters>
-  <exe>E:/GiD/GiD 15.1.1d/gid.exe</exe>
+  <exe>E:/GiD/GiD 15.1.2d/gid.exe</exe>
   <filter_branch_provide>0</filter_branch_provide>
   <filter_date>0</filter_date>
   <filter_fail>0</filter_fail>
@@ -40,7 +40,7 @@
   <maxmemory>0</maxmemory>
   <maxprocess>1</maxprocess>
   <offscreen>0</offscreen>
-  <offscreen_exe>E:/GiD/GiD 15.1.1d/gid_Mesa/gid_offscreen.exe</offscreen_exe>
+  <offscreen_exe>E:/GiD/GiD 15.1.2d/gid_Mesa/gid_offscreen.exe</offscreen_exe>
   <opposite_filters>0</opposite_filters>
   <owner></owner>
   <owners>fjgarate@cimne.upc.edu</owners>
