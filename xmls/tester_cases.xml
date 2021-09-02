@@ -155,11 +155,38 @@
     <help>calculate test using developer kratos version</help>
     <name>autotest_buoyancy2d_heatedsquare_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>Structural 2D</tags>
+    <tags>Buoyancy 2D</tags>
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid/autotest_buoyancy2d_heatedsquare_calculate.mdpa"]&gt;45000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid/autotest_buoyancy2d_heatedsquare_calculate.err"]&lt;1</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid/autotest_buoyancy2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="B0D9709DF7B6C83C9943DB38F24CB31E">
+    <batch>batchs/ConjugateHeatTransfer/2D/autotest_conjugateheattransfer2d_bfs_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_conjugateheattransfer2d_bfs_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_calculate.gid/autotest_conjugateheattransfer2d_bfs_calculate_Fluid.mdpa"]&gt;15000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_calculate.gid/autotest_conjugateheattransfer2d_bfs_calculate_Solid.mdpa"]&gt;7000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_calculate.gid/autotest_conjugateheattransfer2d_bfs_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_calculate.gid/autotest_conjugateheattransfer2d_bfs_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="9442D9F1698011553A79AEEEC2C3AB33">
+    <batch>batchs/ConjugateHeatTransfer/2D/autotest_conjugateheattransfer2d_bfs_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_conjugateheattransfer2d_bfs_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write.gid/autotest_conjugateheattransfer2d_bfs_write_Fluid.mdpa"]&gt;30000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write.gid/autotest_conjugateheattransfer2d_bfs_write_Solid.mdpa"]&gt;20000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write.gid/BuoyancyMaterials.json"]&gt;540</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write.gid/FluidMaterials.json"]&gt;540</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write.gid/ProjectParameters.json"]&gt;16000</check-4>
     </check>
   </case>
 </cases>
