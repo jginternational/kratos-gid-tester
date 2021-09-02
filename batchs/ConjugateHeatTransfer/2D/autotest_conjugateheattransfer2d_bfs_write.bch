@@ -1,6 +1,6 @@
 *****tcl file delete -force "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write.gid"
 MEscape Data Defaults ProblemType kratos escape 
-*****tcl Kratos::Quicktest ConjugateHeatTransfer 2D ::ConjugateHeatTransfer::examples::HeatedSquare::Init
+*****tcl Kratos::Quicktest ConjugateHeatTransfer 2D ::ConjugateHeatTransfer::examples::BFS::Init
 *****tcl MeshGenerationOKDo DefaultSize
 MEscape Files SaveAs "[tester::get_tmp_folder]/autotest_conjugateheattransfer2d_bfs_write" escape
 MEscape Files WriteCalcFile
