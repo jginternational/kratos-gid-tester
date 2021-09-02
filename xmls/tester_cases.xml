@@ -137,5 +137,30 @@
       <check-2>[file size "[tester::get_tmp_folder]/autotest_fsi2d_turek_write.gid/autotest_fsi2d_turek_write_Structural.mdpa"]&gt;300000</check-2>
     </check>
   </case>
+  <case branch_require="developer" id="A8ED03E3D8F7776545F18870CF6D4A19">
+    <batch>batchs/Buoyancy/2D/autotest_buoyancy2d_heatedsquare_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>autotest_buoyancy2d_heatedsquare_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Buoyancy 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_write.gid/autotest_buoyancy2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_write.gid/BuoyancyMaterials.json"]&gt;540</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_write.gid/FluidMaterials.json"]&gt;540</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="864CAFA682C41E6CA14330562697D869">
+    <batch>batchs/Buoyancy/2D/autotest_buoyancy2d_heatedsquare_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>autotest_buoyancy2d_heatedsquare_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Structural 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid/autotest_buoyancy2d_heatedsquare_calculate.mdpa"]&gt;45000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid/autotest_buoyancy2d_heatedsquare_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid/autotest_buoyancy2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
 </cases>
 

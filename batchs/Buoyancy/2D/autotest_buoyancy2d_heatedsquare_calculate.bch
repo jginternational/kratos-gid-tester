@@ -1,0 +1,9 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate.gid"
+MEscape Data Defaults ProblemType kratos escape 
+*****tcl Kratos::Quicktest Buoyancy 2D ::Buoyancy::examples::HeatedSquare::Init
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/autotest_buoyancy2d_heatedsquare_calculate" escape
+MEscape Utilities Calculate escape escape escape
+Mescape Files Save
+*****tcl after 10000 {PWKillProc current yes}
+*****tcl WaitUntilAllProcessTerminate
