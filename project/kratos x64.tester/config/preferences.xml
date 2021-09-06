@@ -19,7 +19,7 @@
   <filter_offscreen>0</filter_offscreen>
   <filter_platform_provide>1</filter_platform_provide>
   <filter_tags>0</filter_tags>
-  <filter_tags_value>{2D 0} {3D 0} {ConvectionDiffusion 0} {DEM 0} {Fluid 0} {FSI 0} {Structural 0}</filter_tags_value>
+  <filter_tags_value>{2D 0} {3D 0} {Buoyancy 0} {ConjugateHeatTransfer 0} {ConvectionDiffusion 0} {DEM 0} {Fluid 0} {FSI 0} {Structural 0}</filter_tags_value>
   <filter_time>0</filter_time>
   <filter_time_value>2</filter_time_value>
   <filter_tree_tags_value></filter_tree_tags_value>

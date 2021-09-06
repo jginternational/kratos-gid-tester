@@ -1,8 +1,8 @@
-*****tcl file delete -force "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid"
+*****tcl file delete -force "[tester::get_tmp_folder]/dem_3d_spheredrop_write.gid"
 MEscape Data Defaults ProblemType kratos escape 
 *****tcl Kratos::Quicktest DEM 3D ::DEM::examples::SpheresDrop::Init
 *****tcl MeshGenerationOKDo DefaultSize
-MEscape Files SaveAs "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write" escape
+MEscape Files SaveAs "[tester::get_tmp_folder]/dem_3d_spheredrop_write" escape
 MEscape Files WriteCalcFile
 Mescape Files Save
 escape

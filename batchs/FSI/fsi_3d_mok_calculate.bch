@@ -1,8 +1,8 @@
-*****tcl file delete -force "[tester::get_tmp_folder]/autotest_fsi3d_mok_calculate.gid"
+*****tcl file delete -force "[tester::get_tmp_folder]/fsi_3d_mok_calculate.gid"
 MEscape Data Defaults ProblemType kratos escape 
 *****tcl Kratos::Quicktest FSI 3D ::FSI::examples::MokChannelFlexibleWall
 *****tcl MeshGenerationOKDo DefaultSize
-MEscape Files SaveAs "[tester::get_tmp_folder]/autotest_fsi3d_mok_calculate" escape
+MEscape Files SaveAs "[tester::get_tmp_folder]/fsi_3d_mok_calculate" escape
 MEscape Utilities Calculate escape escape escape
 Mescape Files Save
 *****tcl after 10000 {PWKillProc current yes}

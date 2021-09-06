@@ -1,8 +1,8 @@
-*****tcl file delete -force "[tester::get_tmp_folder]/autotest_dem2d_circledrop_write.gid"
+*****tcl file delete -force "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid"
 MEscape Data Defaults ProblemType kratos escape 
 *****tcl Kratos::Quicktest DEM 2D ::DEM::examples::CirclesDrop::Init
 *****tcl MeshGenerationOKDo DefaultSize
-MEscape Files SaveAs "[tester::get_tmp_folder]/autotest_dem2d_circledrop_write" escape
+MEscape Files SaveAs "[tester::get_tmp_folder]/dem_2d_circledrop_write" escape
 MEscape Files WriteCalcFile
 Mescape Files Save
 escape
