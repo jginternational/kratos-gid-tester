@@ -266,5 +266,32 @@
       <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
+  <case branch_require="developer" id="A1B8B423A030CF166859A4379437CBAB">
+    <batch>batchs/MPM/mpm_2d_fallingsandball_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>mpm_2d_fallingsandball_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Body.mdpa"]&gt;5000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Grid.mdpa"]&gt;40000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ParticleMaterials.json"]&gt;201</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ProjectParameters.json"]&gt;4000</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="85C5D0CD94D40DF80C02EBD4D405F2DA">
+    <batch>batchs/MPM/mpm_2d_fallingsandball_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>mpm_2d_fallingsandball_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Body.mdpa"]&gt;5000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Grid.mdpa"]&gt;40000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/ParticleMaterials.json"]&gt;202</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.err"]&lt;1</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.post.lst"]&gt;0</check-5>
+    </check>
+  </case>
 </cases>
 
