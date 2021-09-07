@@ -216,5 +216,128 @@
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
+  <case branch_require="developer" id="C51EFA47A0E2DB4C81E4BFB6844AB5FB">
+    <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_2d_NACA0012_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/potentialfluid_2d_NACA0012_write.mdpa"]&gt;1000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/FluidMaterials.json"]&gt;201</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="C872EB80C52A30EF09D43C98250C2B8A">
+    <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_3d_NACA0012_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/potentialfluid_3d_NACA0012_write.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/FluidMaterials.json"]&gt;202</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="7A6622D2B7D6EF92929F2C2AE43F5778">
+    <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_2d_NACA0012_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;1000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;202</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="CCD976D3A495190890BE750DE823FAC2">
+    <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_3d_NACA0012_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;201</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="A1B8B423A030CF166859A4379437CBAB">
+    <batch>batchs/MPM/mpm_2d_fallingsandball_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>mpm_2d_fallingsandball_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Body.mdpa"]&gt;5000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Grid.mdpa"]&gt;40000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ParticleMaterials.json"]&gt;201</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ProjectParameters.json"]&gt;4000</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="85C5D0CD94D40DF80C02EBD4D405F2DA">
+    <batch>batchs/MPM/mpm_2d_fallingsandball_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>mpm_2d_fallingsandball_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Body.mdpa"]&gt;5000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Grid.mdpa"]&gt;40000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/ParticleMaterials.json"]&gt;202</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.err"]&lt;1</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.post.lst"]&gt;0</check-5>
+    </check>
+  </case>
+  <case branch_require="developer" id="6B1E69476203DF9030C97EA1264EA9E6">
+    <batch>batchs/Dam/dam_2d_thermomechanics_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_2d_thermomechanics_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/ProjectParameters.json"]&gt;4000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="B76D8E1A6AE42B9A44A628C8597B29A8">
+    <batch>batchs/Dam/dam_3d_thermomechanics_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_3d_thermomechanics_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid/dam_3d_thermomechanics_write.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid/ProjectParameters.json"]&gt;4000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="6BE66980EFAB9BA9B8E5CD210F1C24CC">
+    <batch>batchs/Dam/dam_2d_thermomechanics_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_2d_thermomechanics_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="1103213E2C867DB60EDD01C9DC257F7A">
+    <batch>batchs/Dam/dam_3d_thermomechanics_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_3d_thermomechanics_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
 </cases>
 

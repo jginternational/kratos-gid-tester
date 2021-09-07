@@ -1,0 +1,9 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid"
+MEscape Data Defaults ProblemType kratos escape 
+*****tcl Kratos::Quicktest Dam 3D ::Dam::examples::ThermoMechaDam3D::Init
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid" escape
+MEscape Utilities Calculate escape escape escape
+Mescape Files Save
+*****tcl after 10000 {PWKillProc current yes}
+*****tcl WaitUntilAllProcessTerminate

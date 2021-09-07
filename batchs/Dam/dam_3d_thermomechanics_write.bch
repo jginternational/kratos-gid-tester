@@ -1,0 +1,8 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid"
+MEscape Data Defaults ProblemType kratos escape 
+*****tcl Kratos::Quicktest Dam 3D ::Dam::examples::ThermoMechaDam3D::Init
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid" escape
+MEscape Files WriteCalcFile
+Mescape Files Save
+escape
