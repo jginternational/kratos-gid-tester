@@ -1,12 +1,13 @@
 # kratos-gid-tester
 GiD Tester project for Kratos Problemtype
 
-## Run local
+## Option A: Run local
+- Check GiD & tester location
 - Install nodejs
 - `npm install`
 - `npm start`
 
-## Run docker
+## Option B: Run docker
 - In Windows (uses linux containers):
     - `./scripts/dockerON.bat`
 - In Linux
