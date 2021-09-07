@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cases version="1.0">
-  <case id="6A14C479CA59B5CA39208ABB989557DC" branch_require="developer">
+  <case id="0F3142A4445A3A90612A1BBA5D505127" branch_require="developer">
     <batch>batchs/Fluid/fluid_2d_cylinderinflow_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>fluid_2d_cylinderinflow_write</name>
@@ -10,7 +10,7 @@
       <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_write.gid/fluid_2d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
     </check>
   </case>
-  <case id="26F96D0A6A8CF313B8FE17CE74A1865F" branch_require="developer">
+  <case id="D93D11AB833AC6F21D05583AED7F0869" branch_require="developer">
     <batch>batchs/Fluid/fluid_3d_cylinderinflow_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>fluid_3d_cylinderinflow_write</name>
@@ -20,7 +20,7 @@
       <check-1>[file size "[tester::get_tmp_folder]/fluid_3d_cylinderinflow_write.gid/fluid_3d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
     </check>
   </case>
-  <case id="352E1FBCD635ADF7A57CD4D18BE96FDE" branch_require="developer">
+  <case id="D9DB3487E58E51B499D4CAA0A1DBEBFA" branch_require="developer">
     <batch>batchs/Fluid/fluid_2d_cylinderinflow_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>fluid_2d_cylinderinflow_calculate</name>
@@ -32,7 +32,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case id="E5DC76514A7F6CDC35D766392181C08B" branch_require="developer">
+  <case id="61CABA69233F754143B1C186FBFC0F6A" branch_require="developer">
     <batch>batchs/FSI/fsi_2d_mok_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>fsi_2d_mok_calculate</name>
@@ -45,7 +45,7 @@
       <check-4>[file size "[tester::get_tmp_folder]/fsi_2d_mok_calculate.gid/fsi_2d_mok_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
-  <case id="8CC8D765DAB92AF83FC37CB9046FD4AC" branch_require="developer">
+  <case id="8DF0BF851B0FFBBD6CE8961ED288C391" branch_require="developer">
     <batch>batchs/FSI/fsi_2d_mok_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>fsi_2d_mok_write</name>
@@ -56,7 +56,7 @@
       <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_mok_write.gid/fsi_2d_mok_write_Structural.mdpa"]&gt;50000</check-2>
     </check>
   </case>
-  <case branch_require="developer" id="AA4744CD90D16229156E268B11B979A4">
+  <case branch_require="developer" id="75D7BED6C78922870DE74281527D56CE">
     <batch>batchs/ConvectionDiffusion/convectiondiffusion_2d_heatedsquare_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>convectiondiffusion_2d_heatedsquare_write</name>
@@ -67,7 +67,7 @@
       <check-2>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-2>
     </check>
   </case>
-  <case branch_require="developer" id="AA54FA3C43DC47CB949236E17D82410C">
+  <case branch_require="developer" id="E9FEE9D405E156D13F45E11D1C6C44ED">
     <batch>batchs/Structural/structural_2d_highrisebuilding_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>structural_2d_highrisebuilding_calculate</name>
@@ -79,7 +79,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="AD64DCDC12AC2A43EDA1392869EDE3DE">
+  <case branch_require="developer" id="FEE2E38938EDF6FC51DB863D1F4F2B4B">
     <batch>batchs/Structural/structural_2d_highrisebuilding_write.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>structural_2d_highrisebuilding_write</name>
@@ -89,7 +89,7 @@
       <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;35000</check-1>
     </check>
   </case>
-  <case branch_require="developer" id="7A902794B5BB91218885533982D5EDA8">
+  <case branch_require="developer" id="709785EDF96208D207D983356724FCD5">
     <batch>batchs/DEM/dem_3d_spheredrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>dem_3d_spheredrop_write</name>
@@ -102,7 +102,7 @@
       <check-4>[file size "[tester::get_tmp_folder]/dem_3d_spheredrop_write.gid/dem_3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-4>
     </check>
   </case>
-  <case branch_require="developer" id="9BAEB419F8B9F3D9BBD356C4B9173B20">
+  <case branch_require="developer" id="F7E3B10853BA75EFEA233215E9621239">
     <batch>batchs/ConvectionDiffusion/convectiondiffusion_2d_heatedsquare_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>convectiondiffusion_2d_heatedsquare_calculate</name>
@@ -114,7 +114,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="BA0EF35E9F4AE46042628060669AC63C">
+  <case branch_require="developer" id="8B71110A51BC7BD27DE9117E295EDF9C">
     <batch>batchs/DEM/dem_2d_circledrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>dem_2d_circledrop_write</name>
@@ -126,7 +126,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="4AB5C1FA6C5EF28FFCD1608504044C58">
+  <case branch_require="developer" id="D93F3EBB2530AFCF57DC5D83DC1A18B5">
     <batch>batchs/FSI/fsi_2d_turek_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>fsi_2d_turek_write</name>
@@ -137,7 +137,7 @@
       <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_turek_write.gid/fsi_2d_turek_write_Structural.mdpa"]&gt;300000</check-2>
     </check>
   </case>
-  <case branch_require="developer" id="A8ED03E3D8F7776545F18870CF6D4A19">
+  <case branch_require="developer" id="67DC79C94E5488F5DB55192C8F640321">
     <batch>batchs/Buoyancy/buoyancy_2d_heatedsquare_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>buoyancy_2d_heatedsquare_write</name>
@@ -150,7 +150,7 @@
       <check-4>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-4>
     </check>
   </case>
-  <case branch_require="developer" id="864CAFA682C41E6CA14330562697D869">
+  <case branch_require="developer" id="7006B5D630354B3A9045DC4F7A8AF8C4">
     <batch>batchs/Buoyancy/buoyancy_2d_heatedsquare_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>buoyancy_2d_heatedsquare_calculate</name>
@@ -162,7 +162,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_calculate.gid/buoyancy_2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="B0D9709DF7B6C83C9943DB38F24CB31E">
+  <case branch_require="developer" id="C51CF727A19A69A2B34DC68517BF88ED">
     <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_bfs_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>conjugateheattransfer_2d_bfs_calculate</name>
@@ -175,7 +175,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="7F7E5E17D4CC88C5C51ABE49A343C981">
+  <case branch_require="developer" id="415983171EDA80E44D368156746728A3">
     <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_bfs_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>conjugateheattransfer_2d_bfs_write</name>
@@ -189,7 +189,7 @@
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ProjectParameters.json"]&gt;16000</check-4>
     </check>
   </case>
-  <case branch_require="developer" id="BFEE6E495BBFEF918188E07253E99602">
+  <case branch_require="developer" id="EFE26A395923C9D24DE985E88B1CCEAE">
     <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_cylindercooling_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>conjugateheattransfer_2d_cylindercooling_write</name>
@@ -203,7 +203,7 @@
       <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/ProjectParameters.json"]&gt;16000</check-5>
     </check>
   </case>
-  <case branch_require="developer" id="8850D3F349533F9DEDCB0FA91CC58C53">
+  <case branch_require="developer" id="82C719DBA22B2717D1A449E4882A8F98">
     <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_cylindercooling_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>conjugateheattransfer_2d_cylindercooling_calculate</name>
@@ -214,6 +214,30 @@
       <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate_Solid.mdpa"]&gt;120000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.err"]&lt;1</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="C51EFA47A0E2DB4C81E4BFB6844AB5FB">
+    <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_2d_NACA0012_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/potentialfluid_2d_NACA0012_write.mdpa"]&gt;1000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/FluidMaterials.json"]&gt;201</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="C872EB80C52A30EF09D43C98250C2B8A">
+    <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_3d_NACA0012_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/potentialfluid_3d_NACA0012_write.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/FluidMaterials.json"]&gt;202</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
     </check>
   </case>
 </cases>
