@@ -247,7 +247,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;1000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;700000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;202</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.err"]&lt;1</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.post.lst"]&gt;0</check-4>
@@ -324,7 +324,7 @@
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.post.lst"]&gt;0</check-3>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/_list_dam_2d_thermomechanics_calculate_7.post.lst"]&gt;0</check-3>
     </check>
   </case>
   <case branch_require="developer" id="1103213E2C867DB60EDD01C9DC257F7A">
@@ -336,7 +336,7 @@
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.mdpa"]&gt;6000000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.post.lst"]&gt;0</check-3>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/_list_dam_3d_thermomechanics_calculate_7.post.lst"]&gt;0</check-3>
     </check>
   </case>
 </cases>
