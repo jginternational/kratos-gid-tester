@@ -240,5 +240,31 @@
       <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
     </check>
   </case>
+  <case branch_require="developer" id="7A6622D2B7D6EF92929F2C2AE43F5778">
+    <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_2d_NACA0012_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;1000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;202</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="CCD976D3A495190890BE750DE823FAC2">
+    <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_3d_NACA0012_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;201</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
 </cases>
 
