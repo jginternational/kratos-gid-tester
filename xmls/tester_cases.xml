@@ -293,5 +293,51 @@
       <check-5>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.post.lst"]&gt;0</check-5>
     </check>
   </case>
+  <case branch_require="developer" id="6B1E69476203DF9030C97EA1264EA9E6">
+    <batch>batchs/Dam/dam_2d_thermomechanics_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_2d_thermomechanics_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/ProjectParameters.json"]&gt;4000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="B76D8E1A6AE42B9A44A628C8597B29A8">
+    <batch>batchs/Dam/dam_3d_thermomechanics_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_3d_thermomechanics_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid/dam_3d_thermomechanics_write.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid/ProjectParameters.json"]&gt;4000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="6BE66980EFAB9BA9B8E5CD210F1C24CC">
+    <batch>batchs/Dam/dam_2d_thermomechanics_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_2d_thermomechanics_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="1103213E2C867DB60EDD01C9DC257F7A">
+    <batch>batchs/Dam/dam_3d_thermomechanics_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_3d_thermomechanics_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
 </cases>
 
