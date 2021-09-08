@@ -13,9 +13,7 @@ scripts/
 timeAdvance.txt
 tester_report.html
 models
-project/kratos x64.tester/config/
-!project/kratos x64.tester/config/preferences*
-!project/kratos x64.tester/config/tree_open.txt
+project/kratos x64.tester/config/di*
 !scripts
 scripts/.GiDPostPreferences.ini
 package-lock.json
