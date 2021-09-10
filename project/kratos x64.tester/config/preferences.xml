@@ -2,11 +2,11 @@
 <tester_configuration version='1.0'>
 <variables_tester>
   <analize_cause_fail>0</analize_cause_fail>
-  <basecasesdir>E:/PROYECTOS/KratosTester</basecasesdir>
+  <basecasesdir>/home/javi/Projects/kratos-gid-tester</basecasesdir>
   <branch_provide>official</branch_provide>
   <email_on_fail>0</email_on_fail>
   <enable_filters>1</enable_filters>
-  <exe>E:/GiD/GiD 15.1.2d/gid.exe</exe>
+  <exe>/home/javi/GiDx64/gid-15.1.3d/gid</exe>
   <filter_branch_provide>0</filter_branch_provide>
   <filter_date>0</filter_date>
   <filter_fail>0</filter_fail>
@@ -38,19 +38,19 @@
   <mailsend_server>smtp.gmail.com</mailsend_server>
   <mailsend_username>b34wB0fOjWI=</mailsend_username>
   <maxmemory>0</maxmemory>
-  <maxprocess>1</maxprocess>
+  <maxprocess>4</maxprocess>
   <offscreen>0</offscreen>
-  <offscreen_exe>E:/GiD/GiD 15.1.2d/gid_Mesa/gid_offscreen.exe</offscreen_exe>
+  <offscreen_exe>/home/javi/GiDx64/gid-15.1.3d/gid_offscreen.exe</offscreen_exe>
   <opposite_filters>0</opposite_filters>
   <owner></owner>
   <owners>fjgarate@cimne.upc.edu</owners>
   <path></path>
-  <platform_provide>Windows 64</platform_provide>
+  <platform_provide>Linux 64</platform_provide>
   <run_at>0</run_at>
   <run_at_value>00:15</run_at_value>
-  <run_n>1</run_n>
+  <run_n>4</run_n>
   <show_as_tree>0</show_as_tree>
-  <show_current_case>0</show_current_case>
+  <show_current_case>1</show_current_case>
   <test_gid>1</test_gid>
   <timeout>3600</timeout>
   <with_window>0</with_window>
