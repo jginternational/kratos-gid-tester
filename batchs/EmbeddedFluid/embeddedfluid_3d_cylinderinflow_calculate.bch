@@ -1,0 +1,9 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid"
+MEscape Data Defaults ProblemType kratos escape 
+*****tcl Kratos::Quicktest EmbeddedFluid 3D ::EmbeddedFluid::examples::CylinderInFlow::Init
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate" escape
+MEscape Utilities Calculate escape escape escape
+Mescape Files Save
+*****tcl after 10000 {PWKillProc current yes}
+*****tcl WaitUntilAllProcessTerminate

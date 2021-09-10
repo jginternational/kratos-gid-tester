@@ -351,15 +351,15 @@
     </check>
   </case>
   <case id="70805DCD66AB6CF54DEEA15B9CEBF3CD" branch_require="developer">
-    <batch>batchs/EmbeddedFluid/embeddedfluid_2d_cylinderinflow_calculate.bch</batch>
+    <batch>batchs/EmbeddedFluid/embeddedfluid_3d_cylinderinflow_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
-    <name>embeddedfluid_2d_cylinderinflow_calculate</name>
+    <name>embeddedfluid_3d_cylinderinflow_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
-    <tags>EmbeddedFluid 2D</tags>
+    <tags>EmbeddedFluid 3D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/embeddedfluid_2d_cylinderinflow_calculate.gid/embeddedfluid_2d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/embeddedfluid_2d_cylinderinflow_calculate.gid/embeddedfluid_2d_cylinderinflow_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/embeddedfluid_2d_cylinderinflow_calculate.gid/embeddedfluid_2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
 </cases>
