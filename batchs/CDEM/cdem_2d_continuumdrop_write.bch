@@ -1,0 +1,8 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid"
+MEscape Data Defaults ProblemType kratos escape
+*****tcl Kratos::Quicktest CDEM 2D ::CDEM::examples::ContinuumDrop2D::Init
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write" escape
+MEscape Files WriteCalcFile
+Mescape Files Save
+escape
