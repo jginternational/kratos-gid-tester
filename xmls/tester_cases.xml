@@ -1,129 +1,408 @@
 <?xml version="1.0" encoding="utf-8"?>
 <cases version="1.0">
-  <case id="6A14C479CA59B5CA39208ABB989557DC" branch_require="developer">
-    <batch>batchs/Fluid/CylinderInFlow/2D/autotest_fluid2d_cylinderinflow_write.bch</batch>
+  <case id="0F3142A4445A3A90612A1BBA5D505127" branch_require="developer">
+    <batch>batchs/Fluid/fluid_2d_cylinderinflow_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_fluid2d_cylinderinflow_write</name>
+    <name>fluid_2d_cylinderinflow_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Fluid 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_write.gid/autotest_fluid2d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_write.gid/fluid_2d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
     </check>
   </case>
-  <case id="26F96D0A6A8CF313B8FE17CE74A1865F" branch_require="developer">
-    <batch>batchs/Fluid/CylinderInFlow/3D/autotest_fluid3d_cylinderinflow_write.bch</batch>
+  <case id="D93D11AB833AC6F21D05583AED7F0869" branch_require="developer">
+    <batch>batchs/Fluid/fluid_3d_cylinderinflow_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_fluid3d_cylinderinflow_write</name>
+    <name>fluid_3d_cylinderinflow_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Fluid 3D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_fluid3d_cylinderinflow_write.gid/autotest_fluid3d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/fluid_3d_cylinderinflow_write.gid/fluid_3d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
     </check>
   </case>
-  <case id="352E1FBCD635ADF7A57CD4D18BE96FDE" branch_require="developer">
-    <batch>batchs/Fluid/CylinderInFlow/2D/autotest_fluid2d_cylinderinflow_calculate.bch</batch>
+  <case id="D9DB3487E58E51B499D4CAA0A1DBEBFA" branch_require="developer">
+    <batch>batchs/Fluid/fluid_2d_cylinderinflow_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
-    <name>autotest_fluid2d_cylinderinflow_calculate</name>
+    <name>fluid_2d_cylinderinflow_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Fluid 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_fluid2d_cylinderinflow_calculate.gid/autotest_fluid2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case id="E5DC76514A7F6CDC35D766392181C08B" branch_require="developer">
-    <batch>batchs/FSI/Mok/2D/autotest_fsi2d_mok_calculate.bch</batch>
+  <case id="61CABA69233F754143B1C186FBFC0F6A" branch_require="developer">
+    <batch>batchs/FSI/fsi_2d_mok_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
-    <name>autotest_fsi2d_mok_calculate</name>
+    <name>fsi_2d_mok_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>FSI 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate_Fluid.mdpa"]&gt;500000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate_Structural.mdpa"]&gt;50000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate.err"]&lt;1</check-3>
-      <check-4>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_calculate.gid/autotest_fsi2d_mok_calculate.post.lst"]&gt;0</check-4>
+      <check-1>[file size "[tester::get_tmp_folder]/fsi_2d_mok_calculate.gid/fsi_2d_mok_calculate_Fluid.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_mok_calculate.gid/fsi_2d_mok_calculate_Structural.mdpa"]&gt;50000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/fsi_2d_mok_calculate.gid/fsi_2d_mok_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/fsi_2d_mok_calculate.gid/fsi_2d_mok_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
-  <case id="8CC8D765DAB92AF83FC37CB9046FD4AC" branch_require="developer">
-    <batch>batchs/FSI/Mok/2D/autotest_fsi2d_mok_write.bch</batch>
+  <case id="8DF0BF851B0FFBBD6CE8961ED288C391" branch_require="developer">
+    <batch>batchs/FSI/fsi_2d_mok_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_fsi2d_mok_write</name>
+    <name>fsi_2d_mok_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>FSI 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_write.gid/autotest_fsi2d_mok_write_Fluid.mdpa"]&gt;500000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_fsi2d_mok_write.gid/autotest_fsi2d_mok_write_Structural.mdpa"]&gt;50000</check-2>
+      <check-1>[file size "[tester::get_tmp_folder]/fsi_2d_mok_write.gid/fsi_2d_mok_write_Fluid.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_mok_write.gid/fsi_2d_mok_write_Structural.mdpa"]&gt;50000</check-2>
     </check>
   </case>
-  <case branch_require="developer" id="AA4744CD90D16229156E268B11B979A4">
-    <batch>batchs/ConvectionDiffusion/2D/autotest_convectiondiffusion2d_heatedsquare_write.bch</batch>
+  <case branch_require="developer" id="75D7BED6C78922870DE74281527D56CE">
+    <batch>batchs/ConvectionDiffusion/convectiondiffusion_2d_heatedsquare_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_convectiondiffusion2d_heatedsquare_write</name>
+    <name>convectiondiffusion_2d_heatedsquare_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConvectionDiffusion 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/autotest_convectiondiffusion2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-2>
+      <check-1>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_write.gid/convectiondiffusion_2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-2>
     </check>
   </case>
-  <case branch_require="developer" id="AA54FA3C43DC47CB949236E17D82410C">
-    <batch>batchs/Structural/HighRiseBuilding/2D/autotest_structural2d_highrisebuilding_calculate.bch</batch>
+  <case branch_require="developer" id="E9FEE9D405E156D13F45E11D1C6C44ED">
+    <batch>batchs/Structural/structural_2d_highrisebuilding_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
-    <name>autotest_structural2d_highrisebuilding_calculate</name>
+    <name>structural_2d_highrisebuilding_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Structural 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_calculate.gid/autotest_structural2d_highrisebuilding_calculate.mdpa"]&gt;35000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_calculate.gid/autotest_structural2d_highrisebuilding_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_calculate.gid/autotest_structural2d_highrisebuilding_calculate.post.lst"]&gt;0</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.mdpa"]&gt;35000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="AD64DCDC12AC2A43EDA1392869EDE3DE">
-    <batch>batchs/Structural/HighRiseBuilding/2D/autotest_structural2d_highrisebuilding_write.bch</batch>
+  <case branch_require="developer" id="FEE2E38938EDF6FC51DB863D1F4F2B4B">
+    <batch>batchs/Structural/structural_2d_highrisebuilding_write.bch</batch>
     <help>calculate test using developer kratos version</help>
-    <name>autotest_structural2d_highrisebuilding_write</name>
+    <name>structural_2d_highrisebuilding_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Structural 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_structural2d_highrisebuilding_write.gid/autotest_structural2d_highrisebuilding_write.mdpa"]&gt;35000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;35000</check-1>
     </check>
   </case>
-  <case branch_require="developer" id="7A902794B5BB91218885533982D5EDA8">
-    <batch>batchs/DEM/SphereDrop/3D/autotest_dem3d_spheredrop_write.bch</batch>
+  <case branch_require="developer" id="709785EDF96208D207D983356724FCD5">
+    <batch>batchs/DEM/dem_3d_spheredrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_dem3d_spheredrop_write</name>
+    <name>dem_3d_spheredrop_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>DEM 3D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM.mdpa"]&gt;100000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_FEM_boundary.mdpa"]&gt;450000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/ProjectParametersDEM.json"]&gt;1024</check-3>
-      <check-4>[file size "[tester::get_tmp_folder]/autotest_dem3d_spheredrop_write.gid/autotest_dem3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-4>
+      <check-1>[file size "[tester::get_tmp_folder]/dem_3d_spheredrop_write.gid/dem_3d_spheredrop_writeDEM.mdpa"]&gt;100000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dem_3d_spheredrop_write.gid/dem_3d_spheredrop_writeDEM_FEM_boundary.mdpa"]&gt;400000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dem_3d_spheredrop_write.gid/ProjectParametersDEM.json"]&gt;1024</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/dem_3d_spheredrop_write.gid/dem_3d_spheredrop_writeDEM_Inlet.mdpa"]&gt;50000</check-4>
     </check>
   </case>
-  <case branch_require="developer" id="9BAEB419F8B9F3D9BBD356C4B9173B20">
-    <batch>batchs/ConvectionDiffusion/2D/autotest_convectiondiffusion2d_heatedsquare_calculate.bch</batch>
+  <case branch_require="developer" id="F7E3B10853BA75EFEA233215E9621239">
+    <batch>batchs/ConvectionDiffusion/convectiondiffusion_2d_heatedsquare_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
-    <name>autotest_convectiondiffusion2d_heatedsquare_calculate</name>
+    <name>convectiondiffusion_2d_heatedsquare_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConvectionDiffusion 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.mdpa"]&gt;45000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_convectiondiffusion2d_heatedsquare_calculate.gid/autotest_convectiondiffusion2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.mdpa"]&gt;45000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="BA0EF35E9F4AE46042628060669AC63C">
-    <batch>batchs/DEM/SphereDrop/2D/autotest_dem2d_circledrop_write.bch</batch>
+  <case branch_require="developer" id="8B71110A51BC7BD27DE9117E295EDF9C">
+    <batch>batchs/DEM/dem_2d_circledrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>autotest_dem2d_circledrop_write</name>
+    <name>dem_2d_circledrop_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>DEM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/autotest_dem2d_circledrop_write.gid/autotest_dem2d_circledrop_writeDEM.mdpa"]&gt;35000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/autotest_dem2d_circledrop_write.gid/autotest_dem2d_circledrop_writeDEM_FEM_boundary.mdpa"]&gt;6000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/autotest_dem2d_circledrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/dem_2d_circledrop_writeDEM.mdpa"]&gt;35000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/dem_2d_circledrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="D93F3EBB2530AFCF57DC5D83DC1A18B5">
+    <batch>batchs/FSI/fsi_2d_turek_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>fsi_2d_turek_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>FSI 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/fsi_2d_turek_write.gid/fsi_2d_turek_write_Fluid.mdpa"]&gt;2000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_turek_write.gid/fsi_2d_turek_write_Structural.mdpa"]&gt;300000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="67DC79C94E5488F5DB55192C8F640321">
+    <batch>batchs/Buoyancy/buoyancy_2d_heatedsquare_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>buoyancy_2d_heatedsquare_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Buoyancy 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/buoyancy_2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/BuoyancyMaterials.json"]&gt;500</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/FluidMaterials.json"]&gt;500</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="7006B5D630354B3A9045DC4F7A8AF8C4">
+    <batch>batchs/Buoyancy/buoyancy_2d_heatedsquare_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>buoyancy_2d_heatedsquare_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Buoyancy 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_calculate.gid/buoyancy_2d_heatedsquare_calculate.mdpa"]&gt;45000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_calculate.gid/buoyancy_2d_heatedsquare_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_calculate.gid/buoyancy_2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="C51CF727A19A69A2B34DC68517BF88ED">
+    <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_bfs_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>conjugateheattransfer_2d_bfs_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Fluid.mdpa"]&gt;15000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Solid.mdpa"]&gt;7000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="415983171EDA80E44D368156746728A3">
+    <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_bfs_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>conjugateheattransfer_2d_bfs_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Fluid.mdpa"]&gt;15000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Solid.mdpa"]&gt;7000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/FluidMaterials.json"]&gt;500</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ProjectParameters.json"]&gt;16000</check-5>
+      <check-6>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ConvectionDiffusionMaterials.json"]&gt;300</check-6>
+    </check>
+  </case>
+  <case branch_require="developer" id="EFE26A395923C9D24DE985E88B1CCEAE">
+    <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_cylindercooling_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>conjugateheattransfer_2d_cylindercooling_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Fluid.mdpa"]&gt;900000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Solid.mdpa"]&gt;120000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/FluidMaterials.json"]&gt;500</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/ProjectParameters.json"]&gt;16000</check-5>
+      <check-6>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/ConvectionDiffusionMaterials.json"]&gt;300</check-6>
+    </check>
+  </case>
+  <case branch_require="developer" id="82C719DBA22B2717D1A449E4882A8F98">
+    <batch>batchs/ConjugateHeatTransfer/conjugateheattransfer_2d_cylindercooling_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>conjugateheattransfer_2d_cylindercooling_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>ConjugateHeatTransfer 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate_Fluid.mdpa"]&gt;900000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate_Solid.mdpa"]&gt;120000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="C51EFA47A0E2DB4C81E4BFB6844AB5FB">
+    <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_2d_NACA0012_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>PotentialFluid 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/potentialfluid_2d_NACA0012_write.mdpa"]&gt;1000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/FluidMaterials.json"]&gt;201</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="C872EB80C52A30EF09D43C98250C2B8A">
+    <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_3d_NACA0012_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>PotentialFluid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/potentialfluid_3d_NACA0012_write.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/FluidMaterials.json"]&gt;202</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="7A6622D2B7D6EF92929F2C2AE43F5778">
+    <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_2d_NACA0012_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>PotentialFluid 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;700000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;202</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="CCD976D3A495190890BE750DE823FAC2">
+    <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>potentialfluid_3d_NACA0012_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>PotentialFluid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;201</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="A1B8B423A030CF166859A4379437CBAB">
+    <batch>batchs/MPM/mpm_2d_fallingsandball_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>mpm_2d_fallingsandball_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>MPM 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Body.mdpa"]&gt;5000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Grid.mdpa"]&gt;40000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ParticleMaterials.json"]&gt;201</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ProjectParameters.json"]&gt;4000</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="85C5D0CD94D40DF80C02EBD4D405F2DA">
+    <batch>batchs/MPM/mpm_2d_fallingsandball_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>mpm_2d_fallingsandball_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>MPM 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Body.mdpa"]&gt;5000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Grid.mdpa"]&gt;40000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/ParticleMaterials.json"]&gt;202</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.err"]&lt;1</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.post.lst"]&gt;0</check-5>
+    </check>
+  </case>
+  <case branch_require="developer" id="6B1E69476203DF9030C97EA1264EA9E6">
+    <batch>batchs/Dam/dam_2d_thermomechanics_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_2d_thermomechanics_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Dam 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/ProjectParameters.json"]&gt;4000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="B76D8E1A6AE42B9A44A628C8597B29A8">
+    <batch>batchs/Dam/dam_3d_thermomechanics_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_3d_thermomechanics_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Dam 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid/dam_3d_thermomechanics_write.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_write.gid/ProjectParameters.json"]&gt;4000</check-2>
+    </check>
+  </case>
+  <case branch_require="developer" id="6BE66980EFAB9BA9B8E5CD210F1C24CC">
+    <batch>batchs/Dam/dam_2d_thermomechanics_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_2d_thermomechanics_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Dam 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_write.gid/dam_2d_thermomechanics_write.mdpa"]&gt;1400000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/dam_2d_thermomechanics_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_2d_thermomechanics_calculate.gid/_list_dam_2d_thermomechanics_calculate_7.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="1103213E2C867DB60EDD01C9DC257F7A">
+    <batch>batchs/Dam/dam_3d_thermomechanics_calculate.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>dam_3d_thermomechanics_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Dam 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.mdpa"]&gt;6000000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/dam_3d_thermomechanics_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/_list_dam_3d_thermomechanics_calculate_7.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case id="D7283BA6E51FE7970C26228C7C23E9A2" branch_require="developer">
+    <batch>batchs/EmbeddedFluid/embeddedfluid_3d_cylinderinflow_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>embeddedfluid_3d_cylinderinflow_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>EmbeddedFluid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_write.gid/embeddedfluid_3d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_write.gid/embeddedfluid_3d_cylinderinflow_write.dst"]&gt;7000</check-2>
+    </check>
+  </case>
+  <case id="EA8A56715A00D93AB87D37BD0C8FB5D3" branch_require="developer">
+    <batch>batchs/EmbeddedFluid/embeddedfluid_3d_cylinderinflow_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>embeddedfluid_3d_cylinderinflow_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>EmbeddedFluid 3D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
+  <case branch_require="developer" id="99FE0D7F291253FC6C03B60F266073C0">
+    <batch>batchs/FSI/fsi_2d_turek_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>fsi_2d_turek_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>FSI 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate_Fluid.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate_Structural.mdpa"]&gt;50000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
+  <case branch_require="developer" id="9B7781643A9848C076215AEB28685AA6">
+    <batch>batchs/CDEM/cdem_2d_continuumdrop_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>cdem_2d_continuumdrop_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>CDEM 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/cdem_2d_continuumdrop_writeDEM.mdpa"]&gt;70000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/cdem_2d_continuumdrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/cdem_2d_continuumdrop_writeDEM_Inlet.mdpa"]&gt;100</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/MaterialsDEM.json"]&gt;50</check-5>
+    </check>
+  </case>
+  <case branch_require="developer" id="51D755F44DE6B139A1F83F08190BAA3C">
+    <batch>batchs/CDEM/cdem_3d_contspheredrop_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>cdem_3d_contspheredrop_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>CDEM 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM.mdpa"]&gt;70000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_Inlet.mdpa"]&gt;100</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/MaterialsDEM.json"]&gt;50</check-5>
     </check>
   </case>
 </cases>

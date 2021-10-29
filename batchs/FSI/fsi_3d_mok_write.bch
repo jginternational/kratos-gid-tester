@@ -1,0 +1,8 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/fsi_3d_mok_write.gid"
+MEscape Data Defaults ProblemType kratos escape 
+*****tcl Kratos::Quicktest FSI 3D ::FSI::examples::MokChannelFlexibleWall
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/fsi_3d_mok_write" escape
+MEscape Files WriteCalcFile
+Mescape Files Save
+escape
