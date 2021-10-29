@@ -364,5 +364,18 @@
       <check-3>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate.gid/embeddedfluid_3d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
     </check>
   </case>
+  <case branch_require="developer" id="99FE0D7F291253FC6C03B60F266073C0">
+    <batch>batchs/FSI/fsi_2d_turek_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>fsi_2d_turek_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>FSI 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate_Fluid.mdpa"]&gt;500000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate_Structural.mdpa"]&gt;50000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/fsi_2d_turek_calculate.gid/fsi_2d_turek_calculate.post.lst"]&gt;0</check-4>
+    </check>
+  </case>
 </cases>
 
