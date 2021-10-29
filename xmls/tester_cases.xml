@@ -391,18 +391,18 @@
       <check-5>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/MaterialsDEM.json"]&gt;50</check-5>
     </check>
   </case>
-  <case branch_require="developer" id="9B7781643A9848C076215AEB28685AA6">
-    <batch>batchs/CDEM/cdem_2d_continuumdrop_write.bch</batch>
+  <case branch_require="developer" id="51D755F44DE6B139A1F83F08190BAA3C">
+    <batch>batchs/CDEM/cdem_3d_contspheredrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>cdem_2d_continuumdrop_write</name>
+    <name>cdem_3d_contspheredrop_write</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>CDEM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/cdem_2d_continuumdrop_writeDEM.mdpa"]&gt;70000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/cdem_2d_continuumdrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/cdem_2d_continuumdrop_writeDEM_Inlet.mdpa"]&gt;100</check-3>
-      <check-4>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-4>
-      <check-5>[file size "[tester::get_tmp_folder]/cdem_2d_continuumdrop_write.gid/MaterialsDEM.json"]&gt;50</check-5>
+      <check-1>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM.mdpa"]&gt;70000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_Inlet.mdpa"]&gt;100</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/MaterialsDEM.json"]&gt;50</check-5>
     </check>
   </case>
 </cases>
