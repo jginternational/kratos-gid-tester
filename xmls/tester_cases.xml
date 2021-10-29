@@ -398,11 +398,25 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>CDEM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM.mdpa"]&gt;70000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_Inlet.mdpa"]&gt;100</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM.mdpa"]&gt;180000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_FEM_boundary.mdpa"]&gt;460000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/cdem_3d_contspheredrop_writeDEM_Inlet.mdpa"]&gt;30000</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-4>
-      <check-5>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/MaterialsDEM.json"]&gt;50</check-5>
+      <check-5>[file size "[tester::get_tmp_folder]/cdem_3d_contspheredrop_write.gid/MaterialsDEM.json"]&gt;1000</check-5>
+    </check>
+  </case>
+  <case branch_require="developer" id="F7DF1C720E278A166376A2109BAD032A">
+    <batch>batchs/SwimmingDEM/swimmingdem_3d_cylinderinflow_write.bch</batch>
+    <help>only export file, without calculate, and using developer kratos version</help>
+    <name>swimmingdem_3d_cylinderinflow_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>SwimmingDEM 2D</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM.mdpa"]&gt;700</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM_FEM_boundary.mdpa"]&gt;30000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM_Inlet.mdpa"]&gt;1000</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/ProjectParameters.json"]&gt;50</check-4>
+      <check-5>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/MaterialsDEM.json"]&gt;1000</check-5>
     </check>
   </case>
 </cases>
