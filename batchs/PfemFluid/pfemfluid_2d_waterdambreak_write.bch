@@ -1,0 +1,9 @@
+*****tcl file delete -force "[tester::get_tmp_folder]/pfemfluid_2d_waterdambreak_write.gid"
+MEscape Data Defaults ProblemType kratos escape
+*****tcl set ::Kratos::kratos_private(DevMode) dev
+*****tcl Kratos::Quicktest PfemFluid 2D ::PfemFluid::examples::WaterDamBreak::Init
+*****tcl MeshGenerationOKDo DefaultSize
+MEscape Files SaveAs "[tester::get_tmp_folder]/pfemfluid_2d_waterdambreak_write.gid" escape
+MEscape Files WriteCalcFile
+Mescape Files Save
+escape
