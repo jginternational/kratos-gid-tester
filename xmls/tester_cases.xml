@@ -420,18 +420,18 @@
     </check>
   </case>
   <case branch_require="developer" id="1450C93D74D8D26B960382BCB0845C72">
-    <batch>batchs/PfemFluid/pfem_2d_dambreakfsi_calculate.bch</batch>
+    <batch>batchs/PfemFluid/pfemfluid_2d_dambreakfsi_calculate.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
-    <name>pfem_2d_dambreakfsi_calculate</name>
+    <name>pfemfluid_2d_dambreakfsi_calculate</name>
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>SwimmingDEM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/pfem_2d_dambreakfsi_calculate.gid/pfem_2d_dambreakfsi_calculate.mdpa"]&gt;14000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/pfem_2d_dambreakfsi_calculate.gid/ProjectParameters.json"]&gt;10000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/pfem_2d_dambreakfsi_calculate.gid/PFEMFluidMaterials.json"]&gt;1000</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/pfemfluid_2d_dambreakfsi_calculate.gid/pfemfluid_2d_dambreakfsi_calculate.mdpa"]&gt;14000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/pfemfluid_2d_dambreakfsi_calculate.gid/ProjectParameters.json"]&gt;10000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/pfemfluid_2d_dambreakfsi_calculate.gid/PFEMFluidMaterials.json"]&gt;1000</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="1450C93D74D8D26B960382BCB0845C72">
+  <case branch_require="developer" id="76D11E2984CB292967F4AAAF119C2C0C">
     <batch>batchs/PfemFluid/pfemfluid_2d_waterdambreak_calculate.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>pfemfluid_2d_waterdambreak_calculate</name>
