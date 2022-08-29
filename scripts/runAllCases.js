@@ -57,7 +57,7 @@ function serializeLogs() {
     var cases = [];
     var lines = require('fs').readFileSync(logfile, 'utf-8').split('\n');
     lines.forEach(line => {
-        //console.log(line);
+        console.log(line);
         var res = line.split(" ");
         if (res.length > 4) {
             var caseid = res[2];
