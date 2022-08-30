@@ -242,7 +242,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
     </check>
   </case>
-  <case branch_require="developer" id="7A6622D2B7D6EF92929F2C2AE43F5778">
+  <case branch_require="developer" id="7A6622D2B7D6EF92929F2C2AE43F5778" fail_accepted="1">
     <batch>batchs/PotentialFluid/potentialfluid_2d_NACA0012_calculate.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>potentialfluid_2d_NACA0012_calculate</name>
@@ -255,7 +255,7 @@
       <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
-  <case branch_require="developer" id="CCD976D3A495190890BE750DE823FAC2">
+  <case branch_require="developer" id="CCD976D3A495190890BE750DE823FAC2" fail_accepted="1">
     <batch>batchs/PotentialFluid/potentialfluid_3d_NACA0012_calculate.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>potentialfluid_3d_NACA0012_calculate</name>
@@ -281,7 +281,7 @@
       <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ProjectParameters.json"]&gt;4000</check-4>
     </check>
   </case>
-  <case branch_require="developer" id="85C5D0CD94D40DF80C02EBD4D405F2DA">
+  <case branch_require="developer" id="85C5D0CD94D40DF80C02EBD4D405F2DA" fail_accepted="1">
     <batch>batchs/MPM/mpm_2d_fallingsandball_calculate.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>mpm_2d_fallingsandball_calculate</name>
@@ -341,7 +341,7 @@
       <check-3>[file size "[tester::get_tmp_folder]/dam_3d_thermomechanics_calculate.gid/_list_dam_3d_thermomechanics_calculate_7.post.lst"]&gt;0</check-3>
     </check>
   </case>
-  <case id="D7283BA6E51FE7970C26228C7C23E9A2" branch_require="developer">
+  <case id="D7283BA6E51FE7970C26228C7C23E9A2" branch_require="developer" fail_accepted="1">
     <batch>batchs/EmbeddedFluid/embeddedfluid_3d_cylinderinflow_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>embeddedfluid_3d_cylinderinflow_write</name>
@@ -352,7 +352,7 @@
       <check-2>[file size "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_write.gid/embeddedfluid_3d_cylinderinflow_write.dst"]&gt;7000</check-2>
     </check>
   </case>
-  <case id="EA8A56715A00D93AB87D37BD0C8FB5D3" branch_require="developer">
+  <case id="EA8A56715A00D93AB87D37BD0C8FB5D3" branch_require="developer" fail_accepted="1">
     <batch>batchs/EmbeddedFluid/embeddedfluid_3d_cylinderinflow_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>embeddedfluid_3d_cylinderinflow_calculate</name>
@@ -419,7 +419,7 @@
       <check-5>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/MaterialsDEM.json"]&gt;1000</check-5>
     </check>
   </case>
-  <case branch_require="developer" id="1450C93D74D8D26B960382BCB0845C72">
+  <case branch_require="developer" id="1F98CA9EB77EC522AED7A7DCF55C0954">
     <batch>batchs/PfemFluid/pfemfluid_2d_dambreakfsi_calculate.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
     <name>pfemfluid_2d_dambreakfsi_calculate</name>
