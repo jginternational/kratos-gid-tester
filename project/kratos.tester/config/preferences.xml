@@ -33,10 +33,10 @@
   <graphs_subsample>1</graphs_subsample>
   <htmlimagesbyrow>3</htmlimagesbyrow>
   <initialdir></initialdir>
-  <mailsend_password>b34wB0fOjWI=</mailsend_password>
+  <mailsend_password></mailsend_password>
   <mailsend_port>465</mailsend_port>
   <mailsend_server>smtp.gmail.com</mailsend_server>
-  <mailsend_username>b34wB0fOjWI=</mailsend_username>
+  <mailsend_username></mailsend_username>
   <maxmemory>0</maxmemory>
   <maxprocess>4</maxprocess>
   <offscreen>0</offscreen>
