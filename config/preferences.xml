@@ -11,7 +11,9 @@
   <filter_date>0</filter_date>
   <filter_fail>0</filter_fail>
   <filter_fail_accepted>1</filter_fail_accepted>
+  <filter_fail_accepted_value>1</filter_fail_accepted_value>
   <filter_fail_random>0</filter_fail_random>
+  <filter_fail_random_value>1</filter_fail_random_value>
   <filter_fail_value>fail</filter_fail_value>
   <filter_memory>0</filter_memory>
   <filter_memory_value>200</filter_memory_value>
@@ -32,10 +34,11 @@
   <graphs_subsample>1</graphs_subsample>
   <htmlimagesbyrow>3</htmlimagesbyrow>
   <initialdir></initialdir>
-  <mailsend_password>b34wB0fOjWI=</mailsend_password>
+  <lastfilenames></lastfilenames>
+  <mailsend_password></mailsend_password>
   <mailsend_port>465</mailsend_port>
   <mailsend_server>smtp.gmail.com</mailsend_server>
-  <mailsend_username>b34wB0fOjWI=</mailsend_username>
+  <mailsend_username></mailsend_username>
   <maxmemory>0</maxmemory>
   <maxprocess>8</maxprocess>
   <offscreen>0</offscreen>
@@ -45,7 +48,9 @@
   <owners>fjgarate@cimne.upc.edu</owners>
   <path></path>
   <platform_provide></platform_provide>
+  <reloadlastproject>0</reloadlastproject>
   <run_at>0</run_at>
+  <run_at_midnight>1</run_at_midnight>
   <run_at_value>00:15</run_at_value>
   <run_n>1</run_n>
   <show_as_tree>0</show_as_tree>

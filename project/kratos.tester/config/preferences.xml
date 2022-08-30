@@ -2,7 +2,7 @@
 <tester_configuration version='1.0'>
 <variables_tester>
   <analize_cause_fail>0</analize_cause_fail>
-  <basecasesdir>E:/PROYECTOS/KratosTester</basecasesdir>
+  <basecasesdir>E:/PROYECTOS/KRATOS/KratosTester</basecasesdir>
   <branch_provide>official</branch_provide>
   <email_on_fail>0</email_on_fail>
   <enable_filters>1</enable_filters>

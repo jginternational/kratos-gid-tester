@@ -1,9 +1,9 @@
 const abs_path = process.cwd();
 const path = require('path');
-const project_dir = path.join(abs_path, "project", "kratos x64.tester");
+const project_dir = path.join(abs_path, "project", "kratos.tester");
 const fsExtra = require('fs-extra');
 const { exit } = require('process');
-const logdir = path.join(abs_path, "project", "kratos x64.tester", "logfiles");
+const logdir = path.join(abs_path, "project", "kratos.tester", "logfiles");
 
 function runAllCases() {
 
@@ -28,6 +28,8 @@ function runAllCases() {
     }
     command += extra_flags + ' -gui 0 -verbose 1 -eval "tester::run_all; tester::exit"';
 
+// /gid/tclsh /app/tester/tester.tcl - project /app/project/kratos.tester -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml -gui 0 -verbose 1 -eval "tester::run; tester::exit"
+
     console.log(command);
     const { exec } = require('child_process');
     exec(command, (err, stdout, stderr) => {
@@ -42,6 +44,7 @@ function runAllCases() {
         console.log(`FINISH TESTS`);
         var cases = serializeLogs();
         console.log(cases);
+        exit(0);
         if (cases => cases.every(v => v.error !== 0)) exit(-1);
     });
 };

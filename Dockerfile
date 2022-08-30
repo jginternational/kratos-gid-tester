@@ -18,7 +18,7 @@ ADD scripts/tester.tar .
 COPY batchs batchs
 COPY xmls xmls
 COPY project project
-RUN mv "./project/kratos x64.tester/config/preferences_docker.xml" "./project/kratos x64.tester/config/preferences.xml"
+RUN mv "./project/kratos.tester/config/preferences_docker.xml" "./project/kratos.tester/config/preferences.xml"
 RUN find . -type f -name '*.bch'| xargs sed -i 's/\[tester::get_tmp_folder\]/\/tmp/g'
 
 # js to run
