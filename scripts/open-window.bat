@@ -1,1 +1,2 @@
-%~dp0tester-windows-64.exe -project "%~dp0../project/kratos x64.tester" 
+@REM %~dp0tester-windows-64.exe -project "%~dp0../project/kratos x64.tester" 
+&"C:/Program Files/GiD/GiD 17.1.4d/gid.exe" -tclsh "P:/GiD/gidproject/tester/tester.tcl" -project "P:/Kratos/kratos-gid-tester/project/kratos x64.tester"

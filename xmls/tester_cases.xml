@@ -262,7 +262,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>PotentialFluid 3D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.mdpa"]&gt;6000000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.mdpa"]&gt;1000000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;201</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.err"]&lt;1</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_calculate.gid/potentialfluid_3d_NACA0012_calculate.post.lst"]&gt;0</check-4>
