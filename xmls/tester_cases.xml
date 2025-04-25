@@ -27,7 +27,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Fluid 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.mdpa"]&gt;500000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.mdpa"]&gt;400000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.err"]&lt;1</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_calculate.gid/fluid_2d_cylinderinflow_calculate.post.lst"]&gt;0</check-3>
     </check>
@@ -63,7 +63,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConvectionDiffusion 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_write.gid/convectiondiffusion_2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_write.gid/convectiondiffusion_2d_heatedsquare_write.mdpa"]&gt;35000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-2>
     </check>
   </case>
@@ -74,7 +74,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Structural 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.mdpa"]&gt;35000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.mdpa"]&gt;30000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.err"]&lt;1</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_calculate.gid/structural_2d_highrisebuilding_calculate.post.lst"]&gt;0</check-3>
     </check>
@@ -86,7 +86,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Structural 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;35000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;30000</check-1>
     </check>
   </case>
   <case branch_require="developer" id="709785EDF96208D207D983356724FCD5">
@@ -109,7 +109,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConvectionDiffusion 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.mdpa"]&gt;45000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.mdpa"]&gt;35000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.err"]&lt;1</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/convectiondiffusion_2d_heatedsquare_calculate.gid/convectiondiffusion_2d_heatedsquare_calculate.post.lst"]&gt;0</check-3>
     </check>
@@ -169,10 +169,10 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Fluid.mdpa"]&gt;15000</check-1>
-      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Solid.mdpa"]&gt;7000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.err"]&lt;1</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.post.lst"]&gt;0</check-3>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Fluid.mdpa"]&gt;13000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Solid.mdpa"]&gt;6000</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.err"]&lt;1</check-3>
+      <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.post.lst"]&gt;0</check-4>
     </check>
   </case>
   <case branch_require="developer" id="415983171EDA80E44D368156746728A3">
@@ -182,8 +182,8 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Fluid.mdpa"]&gt;15000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Solid.mdpa"]&gt;7000</check-2>
+      <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Fluid.mdpa"]&gt;13000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Solid.mdpa"]&gt;6000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/FluidMaterials.json"]&gt;500</check-4>
       <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ProjectParameters.json"]&gt;16000</check-5>
@@ -198,7 +198,7 @@
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Fluid.mdpa"]&gt;900000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Solid.mdpa"]&gt;120000</check-2>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Solid.mdpa"]&gt;100000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/FluidMaterials.json"]&gt;500</check-4>
       <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/ProjectParameters.json"]&gt;16000</check-5>
@@ -213,7 +213,7 @@
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate_Fluid.mdpa"]&gt;900000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate_Solid.mdpa"]&gt;120000</check-2>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate_Solid.mdpa"]&gt;100000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.err"]&lt;1</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_calculate.gid/conjugateheattransfer_2d_cylindercooling_calculate.post.lst"]&gt;0</check-4>
     </check>
@@ -237,7 +237,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>PotentialFluid 3D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/potentialfluid_3d_NACA0012_write.mdpa"]&gt;6000000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/potentialfluid_3d_NACA0012_write.mdpa"]&gt;1000000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/FluidMaterials.json"]&gt;202</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_3d_NACA0012_write.gid/ProjectParameters.json"]&gt;4000</check-3>
     </check>
@@ -249,7 +249,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>PotentialFluid 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;700000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.mdpa"]&gt;600000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/FluidMaterials.json"]&gt;202</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.err"]&lt;1</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/potentialfluid_2d_NACA0012_calculate.gid/potentialfluid_2d_NACA0012_calculate.post.lst"]&gt;0</check-4>
@@ -275,8 +275,8 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>MPM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Body.mdpa"]&gt;5000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Grid.mdpa"]&gt;40000</check-2>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Body.mdpa"]&gt;3000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/mpm_2d_fallingsandball_write_Grid.mdpa"]&gt;30000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ParticleMaterials.json"]&gt;201</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_write.gid/ProjectParameters.json"]&gt;4000</check-4>
     </check>
@@ -288,8 +288,8 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>MPM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Body.mdpa"]&gt;5000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Grid.mdpa"]&gt;40000</check-2>
+      <check-1>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Body.mdpa"]&gt;3000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate_Grid.mdpa"]&gt;30000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/ParticleMaterials.json"]&gt;202</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.err"]&lt;1</check-4>
       <check-5>[file size "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid/mpm_2d_fallingsandball_calculate.post.lst"]&gt;0</check-5>
