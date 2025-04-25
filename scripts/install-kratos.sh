@@ -18,7 +18,7 @@ else
 fi
 
 echo "Download kratos bins"
-python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==9.1.3
+python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==9.5.2
 echo "Downloaded"
 
 echo "KRATOS READY"

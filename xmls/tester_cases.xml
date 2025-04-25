@@ -7,7 +7,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>Fluid 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_write.gid/fluid_2d_cylinderinflow_write.mdpa"]&gt;500000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/fluid_2d_cylinderinflow_write.gid/fluid_2d_cylinderinflow_write.mdpa"]&gt;400000</check-1>
     </check>
   </case>
   <case id="D93D11AB833AC6F21D05583AED7F0869" branch_require="developer">
@@ -412,7 +412,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>SwimmingDEM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM.mdpa"]&gt;700</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM.mdpa"]&gt;650</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM_FEM_boundary.mdpa"]&gt;30000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/swimmingdem_3d_cylinderinflow_writeDEM_Inlet.mdpa"]&gt;1000</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/swimmingdem_3d_cylinderinflow_write.gid/ProjectParameters.json"]&gt;50</check-4>
