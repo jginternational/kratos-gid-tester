@@ -5,7 +5,7 @@
   <basecasesdir>P:/Kratos/kratos-gid-tester</basecasesdir>
   <branch_provide></branch_provide>
   <email_on_fail>0</email_on_fail>
-  <enable_filters>1</enable_filters>
+  <enable_filters>0</enable_filters>
   <exe>C:\Program Files\GiD\GiD 17.1.4d/gid.exe</exe>
   <filter_branch_provide>1</filter_branch_provide>
   <filter_date>0</filter_date>
@@ -18,7 +18,7 @@
   <filter_offscreen>0</filter_offscreen>
   <filter_platform_provide>1</filter_platform_provide>
   <filter_tags>0</filter_tags>
-  <filter_tags_value></filter_tags_value>
+  <filter_tags_value>{2D 0} {3D 0} {Buoyancy 0} {CDEM 0} {ConjugateHeatTransfer 0} {ConvectionDiffusion 0} {Dam 0} {DEM 0} {EmbeddedFluid 0} {Fluid 0} {FSI 0} {MPM 0} {PotentialFluid 0} {Structural 0} {SwimmingDEM 0}</filter_tags_value>
   <filter_time>0</filter_time>
   <filter_time_value>2</filter_time_value>
   <filter_tree_tags_value></filter_tree_tags_value>
