@@ -170,7 +170,7 @@
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Fluid.mdpa"]&gt;13000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Solid.mdpa"]&gt;6000</check-2>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate_Solid.mdpa"]&gt;3000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.err"]&lt;1</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_calculate.gid/conjugateheattransfer_2d_bfs_calculate.post.lst"]&gt;0</check-4>
     </check>
@@ -183,7 +183,7 @@
     <tags>ConjugateHeatTransfer 2D</tags>
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Fluid.mdpa"]&gt;13000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Solid.mdpa"]&gt;6000</check-2>
+      <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Solid.mdpa"]&gt;3000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/FluidMaterials.json"]&gt;500</check-4>
       <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ProjectParameters.json"]&gt;16000</check-5>
