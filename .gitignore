@@ -20,3 +20,5 @@ package-lock.json
 scripts/tester-linux-64
 config/digest_results.txt
 config/tree_open.txt
+project/kratos x64.tester/config/preferences.xml
+project/kratos x64.tester/config/last_results.txt

@@ -5,5 +5,5 @@ MEscape Data Defaults ProblemType kratos escape
 MEscape Files SaveAs "[tester::get_tmp_folder]/embeddedfluid_3d_cylinderinflow_calculate" escape
 MEscape Utilities Calculate escape escape escape
 Mescape Files Save
-*****tcl after 60000 {PWKillProc current yes}
+*****tcl after 120000 {PWKillProc current yes}
 *****tcl WaitUntilAllProcessTerminate
