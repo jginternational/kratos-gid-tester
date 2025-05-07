@@ -32,10 +32,10 @@
   <graphs_subsample>1</graphs_subsample>
   <htmlimagesbyrow>3</htmlimagesbyrow>
   <initialdir></initialdir>
-  <mailsend_password>b34wB0fOjWI=</mailsend_password>
+  <mailsend_password></mailsend_password>
   <mailsend_port>465</mailsend_port>
   <mailsend_server>smtp.gmail.com</mailsend_server>
-  <mailsend_username>b34wB0fOjWI=</mailsend_username>
+  <mailsend_username></mailsend_username>
   <maxmemory>0</maxmemory>
   <maxprocess>8</maxprocess>
   <offscreen>0</offscreen>
@@ -51,11 +51,13 @@
   <show_as_tree>0</show_as_tree>
   <show_current_case>0</show_current_case>
   <test_gid>1</test_gid>
+  <text_editor>VS Code</text_editor>
   <timeout>3600</timeout>
+  <user_token></user_token>
   <with_window>0</with_window>
 </variables_tester>
 <variables_visual_studio>
-  <vs_path>C:/Program Files (x86)/Microsoft Visual Studio/2017/Enterprise</vs_path>
+  <vs_path>C:/Program Files (x86)/Microsoft Visual Studio/2019/Community</vs_path>
   <vs_solution>C:/gid project/gidvs/gid.sln</vs_solution>
 </variables_visual_studio>
 <variables_git>
