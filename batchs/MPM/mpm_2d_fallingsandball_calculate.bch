@@ -1,8 +1,8 @@
-*****tcl file delete -force "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculategid"
+*****tcl file delete -force "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid"
 MEscape Data Defaults ProblemType kratos escape 
 *****tcl Kratos::Quicktest MPM 2D ::MPM::examples::FallingSandBall::Init
 *****tcl MeshGenerationOKDo DefaultSize
-MEscape Files SaveAs "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculategid" escape
+MEscape Files SaveAs "[tester::get_tmp_folder]/mpm_2d_fallingsandball_calculate.gid" escape
 MEscape Utilities Calculate escape escape escape
 Mescape Files Save
 *****tcl after 10000 {PWKillProc current yes}

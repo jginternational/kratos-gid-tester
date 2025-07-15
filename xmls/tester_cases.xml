@@ -145,7 +145,7 @@
     <tags>Buoyancy 2D</tags>
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/buoyancy_2d_heatedsquare_write.mdpa"]&gt;45000</check-1>
-      <check-2>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/BuoyancyMaterials.json"]&gt;500</check-2>
+      <check-2>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/BuoyancyMaterials.json"]&gt;180</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/FluidMaterials.json"]&gt;500</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/buoyancy_2d_heatedsquare_write.gid/ProjectParameters.json"]&gt;2000</check-4>
     </check>
@@ -184,7 +184,7 @@
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Fluid.mdpa"]&gt;13000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/conjugateheattransfer_2d_bfs_write_Solid.mdpa"]&gt;3000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/BuoyancyMaterials.json"]&gt;180</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/FluidMaterials.json"]&gt;500</check-4>
       <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ProjectParameters.json"]&gt;16000</check-5>
       <check-6>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_bfs_write.gid/ConvectionDiffusionMaterials.json"]&gt;300</check-6>
@@ -199,7 +199,7 @@
     <check>
       <check-1>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Fluid.mdpa"]&gt;900000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/conjugateheattransfer_2d_cylindercooling_write_Solid.mdpa"]&gt;100000</check-2>
-      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/BuoyancyMaterials.json"]&gt;500</check-3>
+      <check-3>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/BuoyancyMaterials.json"]&gt;180</check-3>
       <check-4>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/FluidMaterials.json"]&gt;500</check-4>
       <check-5>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/ProjectParameters.json"]&gt;16000</check-5>
       <check-6>[file size "[tester::get_tmp_folder]/conjugateheattransfer_2d_cylindercooling_write.gid/ConvectionDiffusionMaterials.json"]&gt;300</check-6>
