@@ -17,9 +17,9 @@ function runAllCases() {
     // command += ' -gui 0 -eval "tester::run_all; tester::exit"';
         //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
     if (process.platform === "win32") {
-        var exe_name = "tester-windows-64.exe";
-        var exepath = path.join(abs_path, "scripts", exe_name);
-        var command = exepath + ' -project \"' + project_dir + '\"';
+        // gid path from environment variable
+        var gid_path = process.env.CURRENT_GID_PATH;
+        var command = '"' + gid_path + '" -tclsh E:/PROYECTOS/GiD/gid_project/tester/tester.tcl -project \"' + project_dir + '\"';
         var extra_flags = '';
     } else {
         var exepath = path.join(abs_path, "tester", "tester");
@@ -29,7 +29,7 @@ function runAllCases() {
     command += extra_flags + ' -gui 0 -verbose 1 -eval "tester::run_all; tester::exit"';
 
 // /gid/tclsh /app/tester/tester.tcl - project /app/project/kratos.tester -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml -gui 0 -verbose 1 -eval "tester::run; tester::exit"
-
+// &"E:/GiD/GiD 17.1.4d/gid.exe" -tclsh "E:/PROYECTOS/GiD/gid_project/tester/tester.tcl" -project "E:/PROYECTOS/KRATOS/KratosTester/project/kratos x64.tester" -gui 0 -verbose 1 -eval "tester::run; tester::exit"
     console.log(command);
     const { exec } = require('child_process');
     exec(command, (err, stdout, stderr) => {

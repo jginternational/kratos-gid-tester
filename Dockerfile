@@ -28,3 +28,6 @@ RUN find . -type f -name '*.bch'| xargs sed -i 's/\[tester::get_tmp_folder\]/\/t
 
 # js to run
 COPY "scripts/runAllCases.js" "scripts/runAllCases.js"
+
+# docker build -t kratos-tester:latest .
+# docker run -it --rm  kratos-tester:latest bash
