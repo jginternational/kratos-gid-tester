@@ -28,7 +28,7 @@ RUN python3 -m venv kratos-env
 RUN /kratos-env/bin/python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1
 
 # RUN python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1
-# missing copy kratos.vars
+# TODO: missing copy kratos.vars
 
 # Install Tester
 WORKDIR /app
