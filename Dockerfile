@@ -1,4 +1,4 @@
-FROM gidhome/docker-unix-developer
+FROM gidhome/docker-unix-developer:17.1.5d
 
 WORKDIR /app
 
@@ -12,14 +12,30 @@ RUN curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key | gpg -
 RUN echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_20.x nodistro main" | tee /etc/apt/sources.list.d/nodesource.list
 RUN apt-get update
 RUN apt-get install -y nodejs
-RUN apt-get -y install python3-pip
+RUN apt-get -y install python3-pip python3-venv
 
 COPY package.json package.json
 RUN npm install
 
+WORKDIR /tmp
+# Install Kratos
+ADD scripts/install-kratos.sh .
+RUN chmod +x install-kratos.sh
+RUN ./install-kratos.sh
+
+WORKDIR /
+RUN python3 -m venv kratos-env
+RUN /kratos-env/bin/python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1
+
+# RUN python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1
+# missing copy kratos.vars
+
 # Install Tester
-ADD scripts/tester.tar .
-#COPY "scripts/tester.tcl" ./tester/tester.tcl
+WORKDIR /app
+# ADD scripts/tester.tar .
+COPY scripts/tester.tcl ./tester/tester.tcl
+COPY scripts/xunit_log.tcl ./tester/xunit_log.tcl
+COPY scripts/run_tests.sh run_tests.sh
 COPY batchs batchs
 COPY xmls xmls
 COPY project project
@@ -29,5 +45,7 @@ RUN find . -type f -name '*.bch'| xargs sed -i 's/\[tester::get_tmp_folder\]/\/t
 # js to run
 COPY "scripts/runAllCases.js" "scripts/runAllCases.js"
 
+# execute the script
+CMD ["node", "scripts/runAllCases.js"]
 # docker build -t kratos-tester:latest .
 # docker run -it --rm  kratos-tester:latest bash

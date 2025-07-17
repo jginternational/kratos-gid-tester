@@ -18,6 +18,7 @@
     },
     "homepage": "https://github.com/jginternational/kratos-gid-tester#readme",
     "dependencies": {
-        "fs-extra": "^8.1.0"
+        "fs-extra": "^8.1.0",
+        "xml2js": "^0.6.2"
     }
 }
