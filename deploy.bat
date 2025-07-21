@@ -5,7 +5,7 @@ setlocal EnableDelayedExpansion
 rem do not echo every command
 @echo off
 
-set version="10.3.0"
+set version="Deploying kratos-tester:10.3.0"
 
 echo %version%
 
