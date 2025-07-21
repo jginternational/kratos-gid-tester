@@ -14,7 +14,8 @@ function runAllCases() {
     // Detectar plataforma y construir parámetros
     let gid_exec, gid_args, working_dir;
 
-    let run_command = 'tester::run {8B71110A51BC7BD27DE9117E295EDF9C} 0 ; tester::exit'
+    // let run_command = 'tester::run {8B71110A51BC7BD27DE9117E295EDF9C} 0 ; tester::exit'
+    let run_command = 'tester::run_all ; tester::exit'
 
     if (process.platform === 'win32') {
         gid_exec = process.env.CURRENT_GID_PATH;
@@ -34,7 +35,7 @@ function runAllCases() {
         gid_args = [
             '-tclsh', '/app/tester/tester.tcl',
             '-source', '/app/tester/xunit_log.tcl',
-            '-xunit_log', '/app/tester/tamp.xml',
+            '-xunit_log', '/app/output/tamp.xml',
             '-project', project_dir,
             '-gui', '0',
             '-verbose', '1',
@@ -146,5 +147,25 @@ function getResultDescription(error) {
     return "unknown";
 }
     
+function replace_launch_bat() {
+    // RUN rm "/gid/problemtypes/kratos.gid/exec/pip_gids_python.unix.bat"
+    // COPY "scripts/dockerlauncher.bat" "/gid/problemtypes/kratos.gid/exec/pip_gids_python.unix.bat"
+    const fs = require('fs');
+    const sourcePath = path.join(abs_path, "scripts", "dockerlauncher.bat");
+    const targetPath = path.join("/gid", "problemtypes", "kratos.gid", "exec", "pip_gids_python.unix.bat");
+
+    // delete the target file if it exists
+    if (fs.existsSync(targetPath))
+        fs.unlinkSync(targetPath);
+    // copy the source file to the target path
+    fs.copyFileSync(sourcePath, targetPath);
+    console.log(`Replaced ${targetPath} with ${sourcePath}`);
+}
+
+// if linux, replace the launch bat file
+if (process.platform !== 'win32') {
+    replace_launch_bat();
+}
+
 runAllCases();
 //serializeLogs()

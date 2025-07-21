@@ -14,8 +14,8 @@ else
     git clone https://github.com/KratosMultiphysics/GiDInterface.git
     echo "Downloaded"
     cd GiDInterface
-    git checkout write-geoms-migration
-    echo "Branch write-geoms-migration checked out"
+    # git checkout write-geoms-migration
+    # echo "Branch write-geoms-migration checked out"
     mv -f /tmp/GiDInterface/kratos.gid /gid/problemtypes
     rm -r /tmp/GiDInterface
     # wait 5 seconds
