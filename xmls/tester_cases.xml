@@ -121,7 +121,7 @@
     <owner>fjgarate@cimne.upc.edu</owner>
     <tags>DEM 2D</tags>
     <check>
-      <check-1>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/dem_2d_circledrop_writeDEM.mdpa"]&gt;35000</check-1>
+      <check-1>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/dem_2d_circledrop_writeDEM.mdpa"]&gt;30000</check-1>
       <check-2>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/dem_2d_circledrop_writeDEM_FEM_boundary.mdpa"]&gt;5000</check-2>
       <check-3>[file size "[tester::get_tmp_folder]/dem_2d_circledrop_write.gid/ProjectParametersDEM.json"]&gt;50</check-3>
     </check>

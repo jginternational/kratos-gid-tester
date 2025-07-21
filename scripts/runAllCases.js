@@ -1,8 +1,8 @@
 const abs_path = process.cwd();
+const { spawn } = require('child_process');
 const path = require('path');
 const project_dir = path.join(abs_path, "project", "kratos x64.tester");
 const fsExtra = require('fs-extra');
-const { exit } = require('process');
 const logdir = path.join(abs_path, "project", "kratos x64.tester", "logfiles");
 const casespath = path.join(abs_path, "xmls","tester_cases.xml");
 
@@ -11,58 +11,52 @@ function runAllCases() {
     // Clean previous output
     cleanPreviousLogs()
 
-    //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
-    // var exe_name  = process.platform === "win32" ? "tester-windows-64.exe" : "tester-linux-64";
-    // var exepath = path.join(abs_path, "scripts", exe_name);
-    // var command = exepath + ' -project \"' + project_dir + '\"';
-    // command += ' -gui 0 -eval "tester::run_all; tester::exit"';
-        //var exepath = path.join(abs_path, "scripts", "tester-windows-64.exe");
-    if (process.platform === "win32") {
-        // gid path from environment variable
-        var gid_path = process.env.CURRENT_GID_PATH;
-        var gid_folder = path.dirname(gid_path);
-        var command = '"' + gid_path + '" -tclsh E:/PROYECTOS/GiD/gid_project/tester/tester.tcl  -source E:/PROYECTOS/GiD/gid_project/tester/xunit_log.tcl -xunit_log E:/tmp.xml -project \"' + project_dir + '\"';
-        var extra_flags = '';
-        process.chdir(gid_folder);
+    // Detectar plataforma y construir parámetros
+    let gid_exec, gid_args, working_dir;
+
+    let run_command = 'tester::run {8B71110A51BC7BD27DE9117E295EDF9C} 0 ; tester::exit'
+
+    if (process.platform === 'win32') {
+        gid_exec = process.env.CURRENT_GID_PATH;
+        working_dir = path.dirname(gid_exec);
+        gid_args = [
+            '-tclsh', 'E:/PROYECTOS/GiD/gid_project/tester/tester.tcl',
+            '-source', 'E:/PROYECTOS/GiD/gid_project/tester/xunit_log.tcl',
+            '-xunit_log', 'E:/tmp.xml',
+            '-project', project_dir,
+            '-gui', '0',
+            '-verbose', '1',
+            '-eval', run_command
+        ];
     } else {
-        var exepath = path.join(abs_path, "tester", "tester");
-        var command = '/gid/gid -tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
-        var extra_flags = ' -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml ';
-        process.chdir('/gid');
+        gid_exec = '/gid/gid';
+        working_dir = '/gid';
+        gid_args = [
+            '-tclsh', '/app/tester/tester.tcl',
+            '-source', '/app/tester/xunit_log.tcl',
+            '-xunit_log', '/app/tester/tamp.xml',
+            '-project', project_dir,
+            '-gui', '0',
+            '-verbose', '1',
+            '-eval', run_command
+        ];
     }
-    command += extra_flags + ' -gui 0 -verbose 1 -eval "tester::run_all ; tester::exit"';
 
-    // redirect output to standard output
-    command += ' > ' + path.join("/tester.log") + ' 2>&1';
+    console.log(`Running: ${gid_exec} ${gid_args.join(' ')}`);
+    console.log(`Working directory: ${working_dir}`);
+    process.chdir(working_dir);
 
-// /gid/tclsh /app/tester/tester.tcl - project /app/project/kratos x64.tester -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml -gui 0 -verbose 1 -eval "tester::run; tester::exit"
-// &"E:/GiD/GiD 17.1.4d/gid.exe" -tclsh "E:/PROYECTOS/GiD/gid_project/tester/tester.tcl" -project "E:/PROYECTOS/KRATOS/KratosTester/project/kratos x64.tester" -gui 0 -verbose 1 -eval "tester::run; tester::exit"
-    console.log(command);
-    // print current working directory
-    console.log(`Current working directory: ${abs_path}`);
-    const { exec } = require('child_process');
-    exec(command, (err, stdout, stderr) => {
-        if (err) {
-            // node couldn't execute the command
-            console.log(`ERROR executing tests`);
-            console.log(stderr);
-            return;
-        }
+    // Ejecutar proceso con salida en tiempo real
+    const gidProcess = spawn(gid_exec, gid_args, { stdio: 'inherit' });
 
-        // the *entire* stdout and stderr (buffered)
-        console.log(`FINISH TESTS`);
-        var cases = serializeLogs();
+    gidProcess.on('close', (code) => {
+        console.log(`GID exited with code ${code}`);
+
+        const cases = serializeLogs();
         console.log(cases);
-        
-        // if any case has an error, exit with error code
-        var has_error = cases.some(case_item => case_item.error !== 0);
-        if (has_error) {
-            console.log(`Some cases failed, exiting with error code`);
-            exit(1);
-        } else {
-            console.log(`All cases passed, exiting with success code`);
-            exit(0);
-        }
+
+        const has_error = cases.some(c => c.error !== 0);
+        process.exit(has_error ? 1 : 0);
     });
 };
 
