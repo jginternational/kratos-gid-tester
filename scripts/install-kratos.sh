@@ -21,6 +21,7 @@ else
     # wait 5 seconds
     sleep 5
 fi
+chmod -R 777 /gid/problemtypes/kratos.gid/exec
 
 # echo "Download kratos bins"
 # python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1

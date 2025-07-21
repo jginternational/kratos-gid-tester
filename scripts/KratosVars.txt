@@ -1,0 +1,10 @@
+{
+    "DevMode"              : "dev",
+    "echo_level"           : 0,
+    "mdpa_format"          : 1,
+    "debug_folder"         : [],
+    "allow_logs"           : 0,
+    "launch_configuration" : "External python",
+    "python_path"          : "/kratos-env/bin/python3",
+    "kratos_bin_path"      : ""
+}

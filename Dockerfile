@@ -25,10 +25,9 @@ RUN ./install-kratos.sh
 
 WORKDIR /
 RUN python3 -m venv kratos-env
-RUN /kratos-env/bin/python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1
+# RUN /kratos-env/bin/python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.3.0
 
 # RUN python3 -m pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.2.1
-# TODO: missing copy kratos.vars
 
 # Install Tester
 WORKDIR /app
@@ -40,7 +39,8 @@ COPY batchs batchs
 COPY xmls xmls
 COPY project project
 RUN mv "project/kratos x64.tester/config/preferences_docker.xml" "./project/kratos x64.tester/config/preferences.xml"
-RUN find . -type f -name '*.bch'| xargs sed -i 's/\[tester::get_tmp_folder\]/\/tmp/g'
+# RUN find . -type f -name '*.bch'| xargs sed -i 's/\[tester::get_tmp_folder\]/\/tmp/g'
+COPY scripts/KratosVars.txt /gid/scripts/KratosVars.txt
 
 # js to run
 COPY "scripts/runAllCases.js" "scripts/runAllCases.js"

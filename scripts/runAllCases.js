@@ -26,11 +26,14 @@ function runAllCases() {
         process.chdir(gid_folder);
     } else {
         var exepath = path.join(abs_path, "tester", "tester");
-        var command = '/gid/tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
+        var command = '/gid/gid -tclsh /app/tester/tester.tcl -project \"' + project_dir + '\"';
         var extra_flags = ' -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml ';
         process.chdir('/gid');
     }
-    command += extra_flags + ' -gui 0 -verbose 1 -eval "tester::run_all; tester::exit"';
+    command += extra_flags + ' -gui 0 -verbose 1 -eval "tester::run_all ; tester::exit"';
+
+    // redirect output to standard output
+    command += ' > ' + path.join("/tester.log") + ' 2>&1';
 
 // /gid/tclsh /app/tester/tester.tcl - project /app/project/kratos x64.tester -source /app/tester/xunit_log.tcl -xunit_log /app/tester/tamp.xml -gui 0 -verbose 1 -eval "tester::run; tester::exit"
 // &"E:/GiD/GiD 17.1.4d/gid.exe" -tclsh "E:/PROYECTOS/GiD/gid_project/tester/tester.tcl" -project "E:/PROYECTOS/KRATOS/KratosTester/project/kratos x64.tester" -gui 0 -verbose 1 -eval "tester::run; tester::exit"
