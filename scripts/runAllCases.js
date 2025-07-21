@@ -151,7 +151,7 @@ function replace_launch_bat() {
     // RUN rm "/gid/problemtypes/kratos.gid/exec/pip_gids_python.unix.bat"
     // COPY "scripts/dockerlauncher.bat" "/gid/problemtypes/kratos.gid/exec/pip_gids_python.unix.bat"
     const fs = require('fs');
-    const sourcePath = path.join(abs_path, "scripts", "dockerlauncher.bat");
+    const sourcePath = path.join(abs_path, "dockerlauncher.bat");
     const targetPath = path.join("/gid", "problemtypes", "kratos.gid", "exec", "pip_gids_python.unix.bat");
 
     // delete the target file if it exists

@@ -38,7 +38,8 @@ COPY xmls xmls
 COPY project project
 RUN mv "project/kratos x64.tester/config/preferences_docker.xml" "./project/kratos x64.tester/config/preferences.xml"
 # RUN find . -type f -name '*.bch'| xargs sed -i 's/\[tester::get_tmp_folder\]/\/tmp/g'
-COPY scripts/KratosVars.txt /gid/scripts/KratosVars.txt
+# COPY scripts/KratosVars.txt /gid/scripts/KratosVars.txt
+COPY scripts/dockerlauncher.bat dockerlauncher.bat
 
 # add licence
 RUN echo "147.83.143.50" > /gid/scripts/TemporalVariables
