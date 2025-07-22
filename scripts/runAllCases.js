@@ -15,7 +15,7 @@ function runAllCases() {
     let gid_exec, gid_args, working_dir;
 
     // let run_command = 'tester::run {8B71110A51BC7BD27DE9117E295EDF9C} 0 ; tester::exit'
-    let run_command = 'tester::run_all_by_tags Production; tester::exit'
+    let run_command = 'tester::run_all; tester::exit'
 
     if (process.platform === 'win32') {
         gid_exec = process.env.CURRENT_GID_PATH;
