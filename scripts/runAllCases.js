@@ -56,7 +56,8 @@ function runAllCases() {
         const cases = serializeLogs();
         // console.log(cases);
 
-        const has_error = cases.some(c => c.error !== 0);
+        const has_error = cases.some(c => c.error != 0);
+        console.log(`Has error = ${has_error}`);
         process.exit(has_error ? 1 : 0);
     });
 };
