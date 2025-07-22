@@ -5,9 +5,9 @@ setlocal EnableDelayedExpansion
 rem do not echo every command
 @echo off
 
-set version="Deploying kratos-tester:10.3.0"
+set version="10.3.0"
 
-echo %version%
+echo "Deploying kratos-tester:%version%"
 
 git tag -f %version%
 git push --tags --force

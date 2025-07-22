@@ -5394,6 +5394,36 @@ proc tester::mail_send { recipients subject body } {
     tester::mail_send_mailsend_exe $recipients $subject $body
 }
 
+proc tester::run_all_by_tags { tags } {
+    set run_interactive 0
+    variable preferences
+    set previous_options_filter $preferences(enable_filters)
+    set previous_options_filter_tags $preferences(filter_tags)
+    set_message [_ "Run all cases with tags %s" $tags]
+    set added_tags [list ]
+    if { [llength $tags] ne 0 } {
+        set preferences(enable_filters) 1
+        set preferences(filter_tags) 1
+        foreach tag $tags {
+            if { ![tester::exists_filter_tag $tag] } {
+                tester::add_filter_tag $tag
+                lappend added_tags $tag
+            } 
+        }
+    }
+    set filtered_cases [tester::filter_case_ids [tester::case_ids]]
+    set preferences(enable_filter) $previous_options_filter
+    set preferences(filter_tags) $previous_options_filter_tags
+    foreach tag $added_tags {
+        tester::remove_filter_tag $tag
+    }
+    set t_start [clock seconds]
+    tester::set_message [_ "%s Start run all %s cases" [tester::format_date $t_start] [llength $filtered_cases]]
+    tester::run $filtered_cases $run_interactive
+    set t_end [clock seconds]
+    tester::set_message [_ "%s End run all (spend %s)" [tester::format_date $t_end] [clock format [expr $t_end-$t_start] -format {%H:%M:%S} -gmt 1]]
+    return 0
+}
 proc tester::run_all { } {
     set run_interactive 0
     set filtered_cases [tester::filter_case_ids [tester::case_ids]]

@@ -15,15 +15,15 @@ function runAllCases() {
     let gid_exec, gid_args, working_dir;
 
     // let run_command = 'tester::run {8B71110A51BC7BD27DE9117E295EDF9C} 0 ; tester::exit'
-    let run_command = 'tester::run_all ; tester::exit'
+    let run_command = 'tester::run_all_by_tags Production; tester::exit'
 
     if (process.platform === 'win32') {
         gid_exec = process.env.CURRENT_GID_PATH;
         working_dir = path.dirname(gid_exec);
         gid_args = [
-            '-tclsh', 'E:/PROYECTOS/GiD/gid_project/tester/tester.tcl',
+            '-tclsh', 'E:/PROYECTOS/KRATOS/KratosTester/scripts/tester.tcl',
             '-source', 'E:/PROYECTOS/GiD/gid_project/tester/xunit_log.tcl',
-            '-xunit_log', 'E:/tmp.xml',
+            '-xunit_log', 'E:/PROYECTOS/KRATOS/KratosTester/output/results.xml',
             '-project', project_dir,
             '-gui', '0',
             '-verbose', '1',
@@ -54,7 +54,7 @@ function runAllCases() {
         console.log(`GID exited with code ${code}`);
 
         const cases = serializeLogs();
-        console.log(cases);
+        // console.log(cases);
 
         const has_error = cases.some(c => c.error !== 0);
         process.exit(has_error ? 1 : 0);
@@ -98,7 +98,7 @@ function serializeLogs() {
 
     var runned_cases = [];
     lines.forEach(line => {
-        console.log(line);
+        //console.log(line);
         var res = line.split(" ");
         var error;
         var error_msg = "";
@@ -117,7 +117,7 @@ function serializeLogs() {
             // find case in defined_cases
             var case_name = defined_cases.find(c => c.id === caseid).name;
             var run_case = { caseid: caseid, name: case_name, datetime: datetime, error: error, error_code: getResultDescription(error), error_msg: error_msg };
-            console.log(run_case);
+            //console.log(run_case);
             runned_cases.push(run_case);
         }
     });

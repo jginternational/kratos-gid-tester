@@ -41,6 +41,9 @@ RUN mv "project/kratos x64.tester/config/preferences_docker.xml" "./project/krat
 # COPY scripts/KratosVars.txt /gid/scripts/KratosVars.txt
 COPY scripts/dockerlauncher.bat dockerlauncher.bat
 
+# Create output directory
+RUN mkdir -p /app/output
+
 # add licence
 RUN echo "147.83.143.50" > /gid/scripts/TemporalVariables
 
