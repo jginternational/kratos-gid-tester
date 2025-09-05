@@ -58,6 +58,16 @@ function runAllCases() {
 
         const has_error = cases.some(c => c.error != 0);
         console.log(`Has error = ${has_error}`);
+
+        // print results
+        let error_cases = cases.filter(c => c.error != 0);
+        if (error_cases.length > 0) {
+            console.log("Errors:");
+            error_cases.forEach(c => {
+                console.log(`Case ${c.caseid} (${c.name}) - ${c.error_code} - ${c.datetime.toISOString()} - ${c.error_msg}`);
+            });
+        }
+
         process.exit(has_error ? 1 : 0);
     });
 };
