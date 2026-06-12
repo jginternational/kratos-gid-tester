@@ -4,6 +4,7 @@
   <analize_cause_fail>0</analize_cause_fail>
   <basecasesdir>E:\PROYECTOS\KRATOS\KratosTester</basecasesdir>
   <branch_provide></branch_provide>
+  <debug_exe>E:\GiD\GiD 17.1.4d/gid.exe</debug_exe>
   <email_on_fail>0</email_on_fail>
   <enable_filters>0</enable_filters>
   <exe>E:\GiD\GiD 17.1.4d/gid.exe</exe>
