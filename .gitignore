@@ -22,3 +22,5 @@ config/digest_results.txt
 config/tree_open.txt
 project/kratos x64.tester/config/preferences.xml
 project/kratos x64.tester/config/last_results.txt
+# ignore any file called tree_open.txt
+**/tree_open.txt
