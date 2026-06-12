@@ -89,6 +89,16 @@
       <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;30000</check-1>
     </check>
   </case>
+  <case branch_require="developer" id="4C9C944B2415549550CF0D10CD1CA8C8">
+    <batch>batchs/Structural/structural_2d_contact_write.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>structural_2d_contact_write</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Structural 2D Production</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_contact_write.gid/structural_2d_contact_write.mdpa"]&gt;50000</check-1>
+    </check>
+  </case>
   <case branch_require="developer" id="709785EDF96208D207D983356724FCD5">
     <batch>batchs/DEM/dem_3d_spheredrop_write.bch</batch>
     <help>only export file, without calculate, and using developer kratos version</help>
