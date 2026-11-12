@@ -89,6 +89,18 @@
       <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;30000</check-1>
     </check>
   </case>
+  <case branch_require="developer" id="">
+    <batch>batchs/Structural/structural_2d_contact_calculate.bch</batch>
+    <help>calculate test using developer kratos version</help>
+    <name>structural_2d_contact_calculate</name>
+    <owner>fjgarate@cimne.upc.edu</owner>
+    <tags>Structural 2D Production</tags>
+    <check>
+      <check-1>[file size "[tester::get_tmp_folder]/structural_2d_contact_calculate.gid/structural_2d_contact_calculate.mdpa"]&gt;50000</check-1>
+      <check-2>[file size "[tester::get_tmp_folder]/structural_2d_contact_calculate.gid/structural_2d_contact_calculate.err"]&lt;1</check-2>
+      <check-3>[file size "[tester::get_tmp_folder]/structural_2d_contact_calculate.gid/structural_2d_contact_calculate.post.lst"]&gt;0</check-3>
+    </check>
+  </case>
   <case branch_require="developer" id="4C9C944B2415549550CF0D10CD1CA8C8">
     <batch>batchs/Structural/structural_2d_contact_write.bch</batch>
     <help>calculate test using developer kratos version</help>

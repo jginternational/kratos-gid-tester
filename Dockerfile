@@ -14,7 +14,7 @@ RUN apt-get update
 RUN apt-get install -y nodejs
 # RUN apt-get -y install python3-pip python3-venv
 
-RUN /gid/pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics-all==10.3.0
+RUN /gid/pip install --upgrade --force-reinstall --no-cache-dir KratosMultiphysics[all]==10.4.3
 
 COPY package.json package.json
 RUN npm install
