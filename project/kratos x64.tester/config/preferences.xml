@@ -24,6 +24,7 @@
   <filter_time_value>2</filter_time_value>
   <filter_tree_tags_value></filter_tree_tags_value>
   <filter_with_window>0</filter_with_window>
+  <general_font_size>11</general_font_size>
   <gidini>C:\Users\garat\AppData\Roaming\GiD\17.1.4d/gid.ini</gidini>
   <gidshowtclerror>1</gidshowtclerror>
   <graphs_date_max>0</graphs_date_max>
@@ -55,6 +56,10 @@
   <text_editor>VS Code</text_editor>
   <timeout>3600</timeout>
   <user_token></user_token>
+  <webserver_bind></webserver_bind>
+  <webserver_port>0</webserver_port>
+  <webserver_token></webserver_token>
+  <webserver_token_read>0</webserver_token_read>
   <with_window>0</with_window>
 </variables_tester>
 <variables_visual_studio>

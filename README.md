@@ -12,6 +12,7 @@ For the structure of the repo and how to add cases, see [AGENTS.md](./AGENTS.md)
 - Kratos installed in GiD's python: `<gid>/pip install KratosMultiphysics[all]==10.4.3`.
 - The `kratos.gid` folder you want to test available in GiD's `problemtypes` folder (a copy or a link to your GiDInterface checkout).
 - Node.js (≥ 18) for the runner.
+- If you run a newer tester from GiD's sources (`gid_project/tester/tester.tcl`, v1.9+), it needs the `gid_math_utils` package, which released GiD versions (≤ 18.0) do not ship. Copy `gid_project/scripts/gid_math_utils` into `<gid>/scripts/`. The vendored `scripts/tester.tcl` (v1.8) does not need it.
 
 ## Option A: Run locally (Windows)
 
@@ -24,38 +25,53 @@ For the structure of the repo and how to add cases, see [AGENTS.md](./AGENTS.md)
    set CURRENT_GID_PATH=E:/GiD/GiD 17.1.4d/gid.exe
    ```
    (or use the *Launch Program* configuration in `.vscode/launch.json`, which already sets it).
-3. Check the machine-specific paths, which are currently hard-coded:
-   - `scripts/runAllCases.js` (Windows branch): `-tclsh`, `-source` and `-xunit_log` paths.
-   - `project/kratos x64.tester/config/preferences.xml`: `basecasesdir`, `exe`, `debug_exe`, `gidini`.
+3. Check the machine-specific paths in `project/kratos x64.tester/config/preferences.xml`: `basecasesdir`, `exe` (the GiD that runs each case), `debug_exe`, `gidini`.
 4. Run all cases:
    ```
    npm start
    ```
 
-The runner wipes `project/kratos x64.tester/logfiles/`, runs every case, prints the failing ones and exits with code `1` if any case failed (`0` otherwise). xunit results are written to `output/results.xml`. Models are created in the tester's temporary folder (`tester::get_tmp_folder`), one `<case name>.gid` per case.
-
-### Running a single case
-
-In `scripts/runAllCases.js`, replace the `run_command` with the commented-out form, using the case `id` from `xmls/tester_cases.xml`:
-
-```js
-let run_command = 'tester::run {<case id>} 0 ; tester::exit'
-```
+The runner wipes `project/kratos x64.tester/logfiles/`, runs the cases, prints the failing ones and exits with code `1` if any case failed (`0` otherwise). See [Output](#output). The `CASES`, `TAGS` and `MAXPROCESS` variables described in Option B also work locally, e.g. `set CASES=fluid_2d_cylinderinflow_write`.
 
 ### Tester window
 
 `scripts/open-window.bat` opens the tester GUI on this project, where you can filter by tag, run individual cases and see their history. Adjust its paths first.
 
-## Option B: Run in Docker (Linux container)
+## Option B: Run in Docker (recommended, same environment as CI)
 
-The image installs GiD, Kratos and the **`master` branch of GiDInterface from GitHub** (not your local checkout):
+The image contains GiD 17.2.0-IR (Linux), Kratos in GiD's python and, by default, the `master` branch of GiDInterface. Mount your own checkout to test it instead:
 
 ```
 docker build -t kratos-tester .
-docker run --rm -v ./output:/app/output kratos-tester
+docker run --rm -v <GiDInterface>/kratos.gid:/src/kratos.gid:ro -v <abs path>/output:/app/output kratos-tester
 ```
 
-In Docker, `kratos.gid/exec/pip_gids_python.unix.bat` is replaced by `scripts/dockerlauncher.bat`.
+Environment variables (`-e NAME=value`):
+
+| Variable | Meaning |
+|---|---|
+| `CASES` | Comma-separated case names or ids to run (default: all). |
+| `TAGS` | Comma-separated tags; runs the cases that have any of them (e.g. `DEM,Fluid`). |
+| `MAXPROCESS` | Cases run in parallel (default 4 from `preferences_docker.xml`). Use `1` for a stable baseline: the `_calculate` batches kill Kratos after 10 s, so under load they can fail without a real error. |
+
+Example, two cases one at a time:
+
+```
+docker run --rm -v E:/src/GiDInterface/kratos.gid:/src/kratos.gid:ro -v E:/src/KratosTester/output:/app/output -e CASES=dem_2d_circledrop_write,fsi_2d_mok_calculate -e MAXPROCESS=1 kratos-tester
+```
+
+The mounted folder is copied inside the container, so the tester never writes into your checkout. `kratos.gid/exec/pip_gids_python.unix.bat` is replaced by `scripts/dockerlauncher.bat` in that copy.
+
+Results differ between GiD versions and platforms (e.g. meshes are not identical between GiD 17.1.4d on Windows and 17.2.0-IR on Linux), so a case can pass in Docker and fail locally. CI uses Docker.
+
+## Output
+
+Both options write to `output/` (or `OUTPUT_DIR`):
+
+- `summary.md` / `summary.json` — status and time per case; for each failing case, the Tcl error reported by the tester, the failed checks, the list of files produced and the tail of its `.err` and `.info`.
+- `results.xml` — xunit report.
+- `gid.log` — output of the tester process.
+- `models/<case>/` — files produced by each case (meshes, results and files over 20 MB are skipped).
 
 ## CI
 

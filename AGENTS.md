@@ -15,11 +15,12 @@ There are no unit tests: everything runs inside GiD.
 |---|---|
 | `xmls/tester_cases.xml` | Case catalogue: one `<case>` per test (id, batch, name, tags, checks). |
 | `batchs/<App>/*.bch` | GiD batch files, one per case. |
-| `scripts/runAllCases.js` | Entry point (`npm start`): launches GiD + tester, parses `tester.log`, exit code 1 if any case failed. |
+| `scripts/runAllCases.js` | Entry point (`npm start`): launches GiD + tester (`CASES`/`TAGS`/`MAXPROCESS` env vars), writes `output/summary.md`, exit code 1 if any case failed. |
+| `scripts/docker-entrypoint.sh` | Image entry point: copies a problemtype mounted at `/src/kratos.gid`, then runs `runAllCases.js`. |
 | `scripts/tester.tcl`, `scripts/xunit_log.tcl` | GiD tester and its xunit reporter. Third-party (GiD team) — do not modify. |
 | `scripts/run_tests.sh` | Alternative Linux runner (writes `/test-reports/logs.xml`). |
 | `scripts/dockerlauncher.bat` | Replaces `kratos.gid/exec/pip_gids_python.unix.bat` inside Docker. |
-| `scripts/install-kratos.sh` | Docker: clones GiDInterface `master` into `/gid/problemtypes/kratos.gid`. |
+| `scripts/install-kratos.sh` | Docker build: clones GiDInterface `master` into `/gid/problemtypes/kratos.gid` (default problemtype of the image). |
 | `project/kratos x64.tester/config/` | Tester preferences: `preferences.xml` (local, Windows paths), `preferences_docker.xml` (copied over it in Docker). |
 | `project/kratos x64.tester/logfiles/` | Runtime logs (`tester.log`), wiped on every run. |
 | `output/` | xunit results (ignored). |
@@ -94,3 +95,6 @@ The Kratos version must match the one in GiDInterface (`kratos.gid/kratos.xml`).
 - `*.sh` and `scripts/dockerlauncher.bat` run in Linux and must keep **LF** line endings.
 - `deploy.bat` force-pushes tags and pushes Docker images: do not run it unless asked.
 - Without GiD you can only review batch/XML syntax. Say so when reporting instead of claiming a case passes.
+- Verify GiDInterface changes in Docker (`docker run ... -v <GiDInterface>/kratos.gid:/src/kratos.gid:ro`), which is what CI runs. Local Windows GiD gives different meshes and some cases only fail there.
+- Use `MAXPROCESS=1` for a baseline: `_calculate` batches kill Kratos after 10 s (`after 10000 {PWKillProc current yes}`), so parallel runs fail randomly.
+- Read `output/summary.md` first when a case fails: it has the Tcl error, failed checks, produced files and `.err`/`.info` tails.

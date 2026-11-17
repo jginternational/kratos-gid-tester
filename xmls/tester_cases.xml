@@ -89,7 +89,7 @@
       <check-1>[file size "[tester::get_tmp_folder]/structural_2d_highrisebuilding_write.gid/structural_2d_highrisebuilding_write.mdpa"]&gt;30000</check-1>
     </check>
   </case>
-  <case branch_require="developer" id="">
+  <case branch_require="developer" id="4B3D91607D4B44848CCD1ADC78BA7880">
     <batch>batchs/Structural/structural_2d_contact_calculate.bch</batch>
     <help>calculate test using developer kratos version</help>
     <name>structural_2d_contact_calculate</name>

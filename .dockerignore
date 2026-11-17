@@ -1,0 +1,12 @@
+.git
+.vscode
+node_modules
+output
+models
+*.mdpa
+/FluidMaterials.json
+/MainKratos.py
+/ProjectParameters.json
+project/kratos x64.tester/logfiles
+project/kratos x64.tester/config/last_results.txt
+project/kratos x64.tester/config/digest_results.txt

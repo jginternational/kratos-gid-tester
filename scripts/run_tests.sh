@@ -1,5 +1,5 @@
 
-export TESTERDIR="/app/tester"
+export TESTERDIR="/app/scripts"
 echo "TESTERDIR = $TESTERDIR"
 # if we pass '$1' as command line argument to python -m ....
 # it will be handled as module to be loaded and issue an error
