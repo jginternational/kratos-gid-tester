@@ -13,6 +13,7 @@
 //   gid.log           stdout/stderr of the tester process
 //   models/<case>/    files produced by each case (big meshes/results skipped)
 
+const crypto = require('crypto');
 const fs = require('fs');
 const fsExtra = require('fs-extra');
 const os = require('os');
@@ -44,9 +45,13 @@ function loadCases() {
             checks: c.check && c.check[0] ? Object.values(c.check[0]).map(v => v[0]) : [],
         }));
     });
-    const without_id = cases.filter(c => !c.id);
-    if (without_id.length) {
-        throw new Error(`Cases without id in ${cases_path}: ${without_id.map(c => c.name).join(', ')}`);
+    // The tester identifies a case by the MD5 of its batch path, whatever the xml says
+    for (const c of cases) {
+        const md5 = crypto.createHash('md5').update(c.batch).digest('hex').toUpperCase();
+        if (c.id !== md5) {
+            console.warn(`WARNING: case ${c.name} has id="${c.id}" but the tester uses ${md5} (MD5 of "${c.batch}"). Fix it in tester_cases.xml.`);
+            c.id = md5;
+        }
     }
     return cases;
 }

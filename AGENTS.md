@@ -62,13 +62,14 @@ Conventions:
 - Case name = batch file name = model name: `<app>_<2d|3d>_<example>_<write|calculate>`.
 - `*_write` only writes the input files; `*_calculate` also runs Kratos.
 - `Kratos::Quicktest` (defined in GiDInterface `kratos.gid`) is the bridge into the problemtype: it activates the app and dimension and calls the example's `Init`. Renaming an example proc in GiDInterface breaks its case here.
-- The `id` must be a unique, non-empty 32-character hex string. `runAllCases.js` looks cases up by id and crashes if one is missing.
+- The `id` is the uppercase **MD5 of the `<batch>` path** (e.g. `md5("batchs/Fluid/fluid_2d_cylinderinflow_write.bch")`). The tester computes it that way, so any other value is ignored and the case cannot be found by its xml id. `runAllCases.js` warns about mismatches.
+- Cases with `fail_accepted="1"` are skipped by `tester::run_all` (`filter_fail_accepted`), so CI never runs them: today the PotentialFluid and EmbeddedFluid cases and `mpm_2d_fallingsandball_calculate`. Run them explicitly with `CASES=...`.
 - Escape `<`/`>` in checks as `&lt;`/`&gt;`.
 - Checks are only file-size thresholds today. Prefer adding a check on content (e.g. a `grep` of the `.mdpa` or `ProjectParameters.json`) when a fix needs to be pinned down.
 
 ### Adding a case
 1. Copy a `.bch` of the same kind (`_write` or `_calculate`) and adapt app, dimension, example proc and names.
-2. Add the `<case>` to `xmls/tester_cases.xml` with a new unique id and the app tag.
+2. Add the `<case>` to `xmls/tester_cases.xml` with the app tag and `id` = uppercase MD5 of the batch path (`python -c "import hashlib;print(hashlib.md5(b'batchs/<App>/<name>.bch').hexdigest().upper())"`).
 3. If it introduces a new app tag, add it to `filter_tags_value` in both `project/kratos x64.tester/config/preferences*.xml`.
 4. Run it locally (see README) before committing.
 
